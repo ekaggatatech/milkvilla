@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "my-business-grobo"
+  },
+  "targets": {
+    "my-business-grobo": {
+      "hosting": {
+        "milkybay": [
+          "milkybay"
+        ]
+      }
+    }
+  }
+}
