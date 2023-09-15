@@ -1,0 +1,67 @@
+[{
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "in.milkvilla.core",
+            "sha256_cert_fingerprints": [
+                "91:09:3E:FA:11:42:2A:AF:F4:6A:C7:DA:FD:64:49:B2:F1:5B:CA:6C:5D:A7:B1:67:7D:32:6B:51:CA:1E:FB:49"
+            ]
+        }
+    },
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "in.milkvilla.employee",
+            "sha256_cert_fingerprints": [
+                "79:E2:0F:DD:24:4D:CF:D4:46:07:A8:9C:77:45:44:8B:F0:5D:1D:F5:20:F2:6B:5C:17:44:A9:BD:80:EA:CA:4C",
+                "91:09:3E:FA:11:42:2A:AF:F4:6A:C7:DA:FD:64:49:B2:F1:5B:CA:6C:5D:A7:B1:67:7D:32:6B:51:CA:1E:FB:49"
+            ]
+        }
+    },
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.grobo.milkybay",
+            "sha256_cert_fingerprints": [
+                "0D:3C:AA:AA:5D:1B:1B:83:75:65:B9:DD:DE:17:0C:20:D1:CE:4E:95:F8:25:B8:EB:52:3E:EF:C6:2C:6A:EE:D4",
+                "91:09:3E:FA:11:42:2A:AF:F4:6A:C7:DA:FD:64:49:B2:F1:5B:CA:6C:5D:A7:B1:67:7D:32:6B:51:CA:1E:FB:49"
+            ]
+        }
+    },
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.grobo.milkybayfarmer",
+            "sha256_cert_fingerprints": [
+                "0D:3C:AA:AA:5D:1B:1B:83:75:65:B9:DD:DE:17:0C:20:D1:CE:4E:95:F8:25:B8:EB:52:3E:EF:C6:2C:6A:EE:D4"
+            ]
+        }
+    },
+    {
+        "relation": ["delegate_permission/common.handle_all_urls"],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "in.milkvilla.cart",
+            "sha256_cert_fingerprints": ["70:B1:7A:8D:14:B5:AE:2A:60:2B:DF:FB:ED:F1:62:41:5C:B9:E2:6E:C0:BA:F1:22:7A:7A:C6:E2:E9:67:BA:E1"]
+        }
+    },
+    {
+        "relation": ["delegate_permission/common.handle_all_urls"],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.grobo.milkybaycollection",
+            "sha256_cert_fingerprints": ["0D:3C:AA:AA:5D:1B:1B:83:75:65:B9:DD:DE:17:0C:20:D1:CE:4E:95:F8:25:B8:EB:52:3E:EF:C6:2C:6A:EE:D4"]
+        }
+    }
+]
