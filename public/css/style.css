@@ -8,7 +8,7 @@ body {
   color: gray;
   font-weight: 400;
   font-size: 1rem;
-  font-family: 'Nunito';
+  font-family: 'PT Serif', serif;
 }
 
 ::-moz-selection {
@@ -240,6 +240,9 @@ h5,
 
 .site-section {
   padding: 0em 0;
+  /* height: 100vh !important; */
+  /* overflow-x: hidden;
+  overflow-y: hidden; */
 }
 
 @media (min-width: 768px) {

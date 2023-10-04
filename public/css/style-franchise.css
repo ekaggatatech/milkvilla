@@ -10,8 +10,7 @@ body
   color: gray;
   font-weight: 400;
   font-size: 1rem;
-  font-family: 'Nunito';
-  overflow-x: hidden;
+  font-family: 'PT Serif', serif;
 }
 
 ::-moz-selection
