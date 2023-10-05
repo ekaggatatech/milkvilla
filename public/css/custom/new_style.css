@@ -11990,6 +11990,17 @@ section
 {
     .main-header
     {
+        display: block;
+    }
+    .top_nav
+    {
+        display: none;
+    }
+}
+@media screen and (max-width:991px)
+{
+    .main-header
+    {
         display: none;
     }
     .top_nav
