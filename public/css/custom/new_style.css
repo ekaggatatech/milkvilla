@@ -4272,10 +4272,10 @@ line-height: 1;
 font-family: 'PT Serif', serif;
 display: inline-block;
 }
-.counter {
+/* .counter {
   display: flex;
     padding-left: 40px;
-}
+} */
 .counter small {
 	font-size: 35px;
 	font-weight: 600;
@@ -12039,7 +12039,7 @@ section
     padding: 50px 10px 0px 10px;
     background-color: #ffffff;
     text-align: center;
-    color: #fdcc0d;
+    color: #000000;
     font-weight: bold;
     text-align: center;
     border: 1px solid #ffffff;
@@ -12191,25 +12191,15 @@ section
     margin-bottom:0;
     color: #000000;
   }
-/* Counter Increment Section CSS */
-/* .counter_container 
+.counter_increment_box_text
 {
-    display: flex;
-    flex-wrap: wrap;
-}
-.box 
-{
-    width: 100px;
-    height: 100px;
+    border-radius: 80%;
+    border: 4px dotted #fcdf12;
+    width: 120px;
+    height: 120px;
+    padding-top: 45px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    border: 2px solid #333;
-    margin: 10px;
-    font-size: 24px;
-    background-color: #fcdf12;
-} */
-.number
-{
-
+    margin-left: auto;
+    margin-right: auto;
 }
