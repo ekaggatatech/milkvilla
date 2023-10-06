@@ -20,60 +20,26 @@
 18. pricing
 19. contact
 20. footer
-
 */
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 /* 1. Theme default css */
+@font-face 
+{
+    font-family: 'Rubik-Regular';
+    src: url('../../fonts/Rubik/Rubik-Regular.ttf') format('truetype');
+}
 html 
 {
     scroll-behavior: smooth !important;
 }
  body {
-    /* font-family: 'Roboto', sans-serif; */
-    font-family: 'PT Serif', serif;
+    font-family: 'Rubik-Regular';
 	font-size: 15px;
 	font-weight: normal;
 	color: #777;
 	font-style: normal;
     line-height: 26px;
     margin: 0;
-/*     .cursor {
-        pointer-events: none;
-        
-        &__ball {
-          position: fixed;
-          top: 0;
-          left: 0;
-          mix-blend-mode: difference;
-          z-index: 1000;
-          
-          circle {
-            fill: #f7f8fa;
-          }
-        }      
-      } 
-      
-      .left, .right {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      
-      .right {
-        background: #fff;
-        
-        a {
-          border-bottom: 2px solid #000;
-        }
-        
-        h1, p, a {
-          color: #000;
-        }
-      } */
 }
 .nav-link:focus, .nav-link:hover {
   color: #087462;
@@ -233,7 +199,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'PT Serif', serif;
+    /* font-family: 'PT Serif', serif; */
+    font-family: 'Rubik-Regular';
 	color: #141b22;
 	margin-top: 0px;
 	font-style: normal;
@@ -352,9 +319,9 @@ label {
 	vertical-align: middle;
 	white-space: nowrap;
 	position: relative;
-    z-index: 1;
+    /* z-index: 1; */
     text-transform: capitalize;
-   background: #fdcc0d;
+    background: #fdcc0d;
     border: 1px solid #fdcc0d;
     overflow: hidden;
 }
@@ -625,7 +592,8 @@ top: -3px;
     font-weight:600;
 	position: relative;
     font-size: 16px;
-    font-family: 'PT Serif', serif;
+    /* font-family: 'PT Serif', serif; */
+    font-family: 'Rubik-Regular';
 }
 .main-menu ul li a::after {
   content: "+";
@@ -751,7 +719,8 @@ line-height: 38px;
  color: #087462;
 font-size: 25px;
 font-weight: 900;
-font-family: 'PT Serif', serif;
+/* font-family: 'PT Serif', serif; */
+font-family: 'Rubik-Regular';
 }
 .menu-search{
     padding: 10px 0;
@@ -1067,7 +1036,8 @@ z-index: 9;
 }
 
 .header-three .main-menu ul li a {
-        font-family: 'PT Serif', serif;
+    /* font-family: 'PT Serif', serif; */
+    font-family: 'Rubik-Regular';
     color:#fff;
 }
 .header-three .main-menu .sub-menu li a,.menu .children li a {
@@ -1126,7 +1096,8 @@ float: right;
 .slider-four .slider-bg .text2 h5 {
     color: #fdcc0d;
     font-size: 18px;
-           font-family: 'PT Serif', serif;
+    /* font-family: 'PT Serif', serif; */
+    font-family: 'Rubik-Regular';
     font-weight: 500;
 }
 
@@ -1751,7 +1722,8 @@ color: #fff;
 position: relative;
 display: inline-block;
 font-weight: 600;
-font-family: 'PT Serif', serif;
+/* font-family: 'PT Serif', serif; */
+font-family: 'Rubik-Regular';
 margin-top: 0;
 }
 .about-text span sub {
@@ -1970,7 +1942,8 @@ width: 50%;
 	color: #141b22;
 	opacity: .05;
 	margin: 0;
-	font-family: 'Playfair Display', serif;
+	/* font-family: 'Playfair Display', serif; */
+    font-family: 'Rubik-Regular';
 	font-weight: 500;
 	font-style: italic;
 	top: -35px;
@@ -1991,7 +1964,8 @@ top: 30px;
   color: #fff;
   font-size: 18px;
   font-weight: 400;
-  font-family: 'PT Serif', serif;
+  /* font-family: 'PT Serif', serif; */
+  font-family: 'Rubik-Regular';
 }
 .second-atitle > span {
 	font-size: 16px;
@@ -2284,7 +2258,8 @@ transition: all 0.3s ease-out 0s;
 }
 .services-box a{
     color: #141831;
-    font-family: 'PT Serif', serif;
+    /* font-family: 'PT Serif', serif; */
+    font-family: 'Rubik-Regular';
 }
 .services-box a:hover{
     color: #006e2f;
@@ -2937,7 +2912,8 @@ background-color: rgba(18, 88, 117, 0.85);
     color: #fff;
 }
 .services-box07 .sr-contner .text a{
-    font-family: 'PT Serif', serif;
+    /* font-family: 'PT Serif', serif; */
+    font-family: 'Rubik-Regular';
     color: #fff;
 }
 
@@ -2952,13 +2928,15 @@ background-color: rgba(18, 88, 117, 0.85);
 .services-07 .user-box .text h2 {
     font-size: 24px;
     font-weight: 500;
-           font-family: 'PT Serif', serif;
+    /* font-family: 'PT Serif', serif; */
+    font-family: 'Rubik-Regular';
     color: #fff;
     margin-bottom: 5px;
 }
 .services-07 .user-box .text h3 {
     font-size: 14px;
-           font-family: 'PT Serif', serif;
+    /* font-family: 'PT Serif', serif; */
+    font-family: 'Rubik-Regular';
     color: #9a9fa2;
 }
 
@@ -3330,7 +3308,8 @@ text-align: center;
 position: relative;
 float: left;
 color: #fff;
-font-family: 'PT Serif', serif;
+/* font-family: 'PT Serif', serif; */
+font-family: 'Rubik-Regular';
 font-size: 24px;
 font-weight: 600;
 line-height: 70px;
@@ -3525,7 +3504,8 @@ margin-bottom:10px;
 	font-size: 18px;
 	color: #fff;
 	margin-bottom: 30px;
-    font-family: 'PT Serif', serif;
+    /* font-family: 'PT Serif', serif; */
+    font-family: 'Rubik-Regular';
 }
 /* 8. choose */
 .chosse-img {
@@ -3576,7 +3556,8 @@ margin-bottom:10px;
     margin-right: 25px;
     position: relative;
     border: 2px solid #1f53db;
-    font-family: 'PT Serif', serif;
+    /* font-family: 'PT Serif', serif; */
+    font-family: 'Rubik-Regular';
 }
 .choose-btn a .icon {
     padding: 0 20px 0 0;
@@ -3809,7 +3790,8 @@ background: #fdcc0d 0% 0% no-repeat padding-box;
 display: inline-block;
 font-size: 18px;
 line-height: 48px;
-font-family: 'Titillium Web', sans-serif;
+/* font-family: 'Titillium Web', sans-serif; */
+font-family: 'Rubik-Regular';
 color: #fff;
 cursor: pointer;
 border-radius: 50%;
@@ -4259,7 +4241,7 @@ padding-left: 0;
 padding-right: 0;
 }
 .counter-area .row div:nth-child(4) .single-counter {
-  display: ;
+  display: block;
   border-right: none;
 }
 .single-counter {
@@ -11826,7 +11808,7 @@ color: #fff;
 {
     width: 100%;
     height: 100vh;
-    overflow-y: scroll;
+    overflow-y: auto;
     scroll-snap-type: y mandatory;
     overflow-x: hidden;
 }
@@ -12087,7 +12069,7 @@ section
 	transform: scale(1.1);
 }
 /* New bottom to top scroll button css */
-.to-top {
+/* .to-top {
     background: white;
     position: fixed;
     bottom: 16px;
@@ -12109,7 +12091,7 @@ section
     bottom:32px;
     pointer-events: auto;
     opacity:1;
-}
+} */
 /* New Footer CSS */
 .footer-dark {
     padding: 20px 0;
@@ -12209,3 +12191,25 @@ section
     margin-bottom:0;
     color: #000000;
   }
+/* Counter Increment Section CSS */
+/* .counter_container 
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box 
+{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #333;
+    margin: 10px;
+    font-size: 24px;
+    background-color: #fcdf12;
+} */
+.number
+{
+
+}
