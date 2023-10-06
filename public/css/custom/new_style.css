@@ -12203,3 +12203,29 @@ section
     margin-left: auto;
     margin-right: auto;
 }
+/* Custom Scroll Bar */
+.scroll-container 
+{ 
+    height: auto; 
+    overflow-y: auto; 
+} 
+.scroll-container::-webkit-scrollbar 
+{ 
+    width: 10px; 
+} 
+.scroll-container::-webkit-scrollbar-track 
+{ 
+    background: #fdba04; 
+} 
+.scroll-container::-webkit-scrollbar-thumb 
+{ 
+    background: #fdba04; 
+} 
+.scroll-container::-webkit-scrollbar-thumb:hover 
+{ 
+    background: #ffffff; 
+} 
+.scroll-container::-webkit-scrollbar-button 
+{ 
+    display: none; 
+}
