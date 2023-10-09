@@ -36,6 +36,9 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/custom/new_style.css">
 	<script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js"></script>
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" style="overflow-x: hidden;">
@@ -46,7 +49,7 @@
 		</div>
 	</div>
 <!-- <div class="scroll-container">  -->
-	<div class="new_wrapper">
+	<main class="new_wrapper">
 	<div class="site-wrap">
 		<!-- Web Header Section (HOME) -->
 			<header class="header-area header main-header">            	
@@ -128,14 +131,14 @@
             </div>
 		  </header>
 		<!-- Cover Section (HOME) -->
-		<section id="home" class="site-blocks-cover">
+		<section id="home" class="site-blocks-cover new_sec">
 			<div class="image-container">
 					<img src="../public/images/MilkvillaCoverVideo.gif" alt="Milkvilla" title="MilkVilla" style="width: 100vw;height: 100vh;opacity: 0.8;" />
 					<!-- <h4 class="text-black" style="text-align: center !important;position: absolute;top: 14%;left: 0;right: 0;">काम का दूध पीयें, नाम का नहीं</h4> -->
 					<p style="text-align: center !important;position: absolute;bottom: 0;left: 0;right: 0;"><a href="https://play.google.com/store/apps/details?id=com.grobo.milkybay&hl=en" target="_blank" class="btn btn-funky btn-primary" title="Download Milkvilla">Download Milkvilla</a></p>
 			</div>
 		</section>
-		<section id="info_box" class="site-section" style="height: auto;background-color: #ffffff;background-image: url('../public/images/Milkvilla_web_updated.png');background-attachment: fixed;background-position: center;background-size: cover;background-repeat: no-repeat;">
+		<section id="info_box" class="site-section new_sec" style="height: auto;background-color: #ffffff;background-image: url('../public/images/Milkvilla_web_updated.png');background-attachment: fixed;background-position: center;background-size: cover;background-repeat: no-repeat;">
 			<div class="container">
 							<div class="row sbox mt-5 mb-0 pt-2 d-flex align-items-center justify-content-center" style="min-height: 100vh;"><!-- style="position: relative;transform: translatey(0%);top: 0%;bottom: 0%;height: 100vh;" -->
 								<div class="col-lg-3 col-md-6 col-sm-12 mb-2 mt-0">
@@ -145,7 +148,7 @@
 											<img src="../public/images/milk-tank.png" alt="Unpasteurized" title="Unpasteurize" width="60" height="60" />
 										</div>
 										<div class="text">
-											<h3><a href="#">Unpasteurized</a></h3>
+											<h5><a href="#">Unpasteurized</a></h5>
 										</div>
 									 </div>
 									</div>
@@ -158,7 +161,7 @@
 										<img src="../public/images/change.png" alt="Unprocessed" title="Unprocessed" width="60" height="60" />
 										</div>
 										<div class="text">
-											<h3><a href="#">Unprocessed</a></h3>
+											<h5><a href="#">Unprocessed</a></h5>
 										</div>
 									 </div>
 									   
@@ -172,7 +175,7 @@
 										<img src="../public/images/no-plastic-bags.png" alt="Unpackaged" title="Unpackaged" width="60" height="60" />
 										</div>
 										<div class="text">
-											<h3><a href="#">Unpackaged</a></h3>
+											<h5><a href="#">Unpackaged</a></h5>
 										</div>
 									 </div>
 									</div>
@@ -182,10 +185,10 @@
 										<div class="sr-contner">
 										<div class="icon">
 										<!-- <i class="fa fa-leaf"></i> -->
-										<img src="../public/images/leaves.png" alt="Green Energy" title="Green Energy" width="60" height="60" />
+										<img src="../public/images/vehicle-tracking.png" alt="Vehicle Tracking" title="Green Energy" width="auto" height="auto" />
 										</div>
 										<div class="text">
-										   <h3> <a href="#">Green Energy</a> </h3>
+										   <h5><a href="#">Vehicle Tracking</a></h5>
 										</div>
 									 </div>
 									</div>
@@ -194,17 +197,16 @@
 			</div>
 		</section>
 		<!-- Counter Increment Section -->
-		<section id="counter_data" class="site-section" style="min-height: 100vh;background-color: #ffffff;height: auto;background-image: url('../public/images/1.png');background-attachment: fixed;background-position: center;background-size: cover;background-repeat: no-repeat;">
+		<section id="counter_data" class="site-section new_sec" style="min-height: 100vh;background-color: #ffffff;height: auto;background-image: url('../public/images/1.png');background-attachment: fixed;background-position: center;background-size: cover;background-repeat: no-repeat;">
 			<div class="container">
 				<div class="row sbox mt-5 mb-5 d-flex align-items-center justify-content-center">
 					<div class="col-lg-3 col-md-6 col-sm-12 mb-5 mt-5">
 						<div class="services-box mb-10 text-center wow fadeInUp animated" data-animation="fadeInUp" data-delay=".4s" style="visibility: visible; animation-name: fadeInUp;">
 							<div class="sr-contner">
-								<div class="counter_increment_box_text"><h3 id="milkDelivered">0 Ltr.</h3></div>
+								<div class="counter_increment_box_text"><h3 id="milkDelivered">0</h3></div>
 								<div class="text mt-2">
 									<h3><a href="#">Ltr. Delivered</a></h3>
 								</div>
-								<!-- <div style="background-color: #fcdf12;width: auto;height: 20px;position: absolute;bottom: 0;left: 0;right: 0;top: auto;border: 1px solid #ffffff;"></div> -->
 						 	</div>
 						</div>
 					</div>
@@ -243,59 +245,61 @@
 			</div>
 		</section>
 		<!-- Why Choose Us Section -->
-		<section id="whymilkvilla" class="site-section" style="min-height: 100vh;background-color: #ffffff;background-color: #fcdf12;width: 100vw;height: auto;background-image: url('../public/images/milkvilla_why_us_bg.png');background-attachment: fixed;background-position: center;background-size: cover;background-repeat: no-repeat;max-width:100%;opacity: 1;">
-							<div class="row mt-5 mb-0 justify-content-center text-center">
-								<div class="col-12 text-center mt-5 mb-0 pb-0">
+		<section id="whymilkvilla" class="site-section new_sec" style="min-height: 100vh;background-color: #ffffff;background-color: #fcdf12;width: 100vw;height: auto;background-image: url('../public/images/milkvilla_why_us_bg.png');background-attachment: fixed;background-position: center;background-size: cover;background-repeat: no-repeat;max-width:100%;opacity: 1;">
+							<div class="row mt-5 mb-2 justify-content-center text-center">
+								<div class="col-12 text-center mt-0 mb-0 pb-0">
 									<h2 class="section-title d-flex justify-content-center ml-auto mr-auto pb-0 mb-0" style="text-align: center !important;">
-										<p style="color: #ffffff;margin-right: 20px;">4</p>
+										<p style="color: #ffffff;margin-right: 20px;">6</p>
 										<p style="color: #000;font-weight: normal;">REASONS</p>
 									</h2>
-									<h2 class="section-title mb-0 pb-0" style="text-align: center;"><p style="color: #000;font-weight: bold;text-align: center;">TO CHOOSE MILKVILLA</p></h2>
+									<h2 class="section-title mb-0 pb-0" style="text-align: center;">
+										<p style="color: #000;font-weight: bold;text-align: center;">TO CHOOSE MILKVILLA</p>
+									</h2>
 									<p style="color: #000;font-weight: normal;text-align: center;">
 										We provide seamless milk delivery experience.
 									</p>
 								</div>
 							</div>
-							<div class="row mb-5 pb-0 justify-content-center text-center">
-								<div class="col-12 text-center mb-0 pb-0">
-										<div class="row mb-0 pb-0 justify-content-center text-center">
-											<div class="col-3 col-lg-3 col-xl-3 col-xxl-3 col-sm-12 col-md-12 col-xs-12 text-center mb-2 d-flex justify-content-center">
-												<div class="new_why_milkvilla_circle">
-													Hyperlocal Sourcing
-												</div>
+							<div class="row mb-2 pb-0 text-center d-flex justify-content-center ml-auto mr-auto">
+											<div class="col-lg-3 col-xl-3 col-xxl-3 col-sm-10 col-md-10 col-xs-10 mb-2 new_why_milkvilla_circle">
+												<img src="./images/farmers-count.svg" class="card-img-top" style="padding-bottom: 0px;width: 80px;height: 80px;">
+												<p style="font-size: 26px; font-weight: bold;">1549 Farmers</p><!-- Hyperlocal Sourcing -->
+												<p>Milk daily collected at each farmer's doorsteps</p>
 											</div>
-											<div class="col-3 col-lg-3 col-xl-3 col-xxl-3 col-sm-12 col-md-12 col-xs-12 text-center mb-2 d-flex justify-content-center">
-												<div class="new_why_milkvilla_circle">
-													Doorstep Collection and Delivery
-												</div>
+											<div class="col-lg-3 col-xl-3 col-xxl-3 col-sm-10 col-md-10 col-xs-10 mb-2 new_why_milkvilla_circle card_spacing">
+												<img src="./images/milk-test.svg" class="card-img-top" style="padding-bottom: 0px;width: 80px;height: 80px;">
+												<p style="font-size: 26px; font-weight: bold;">Micro Testing</p><!-- Doorstep Collection and Delivery -->
+												<p>Milk is tested at farmer's doorsteps to ensure best quality</p>
 											</div>
-											<div class="col-3 col-lg-3 col-xl-3 col-xxl-3 col-sm-12 col-md-12 col-xs-12 text-center mb-2 d-flex justify-content-center">
-												<div class="new_why_milkvilla_circle">
-													Non-Packaged Goodness
-												</div>
+											<div class="col-lg-3 col-xl-3 col-xxl-3 col-sm-10 col-md-10 col-xs-10 mb-2 new_why_milkvilla_circle card_spacing">
+												<img src="./images/milk-vending.svg" class="card-img-top" style="padding-bottom: 0px;width: 80px;height: 80px;">
+												<p style="font-size: 26px; font-weight: bold;">Wireless Milk Dispenser</p><!-- Non-Packaged Goodness -->
+												<p>Milk free from hand-touch during entire operation</p>
 											</div>
-											<div class="col-3 col-lg-3 col-xl-3 col-xxl-3 col-sm-12 col-md-12 col-xs-12 text-center mb-2 d-flex justify-content-center">
-												<div class="new_why_milkvilla_circle">
-													Supporting Local Farmers
-												</div>
-											</div>
-										</div>
-									</div>
 							</div>
-							<!-- <br />
-							<br />
-							<br />
-							<br />
-							<br />
-							<br />
-							<br />
-							<br /> -->
+							<div class="row mb-2 pb-0 text-center d-flex justify-content-center ml-auto mr-auto">
+											<div class="col-lg-3 col-xl-3 col-xxl-3 col-sm-10 col-md-10 col-xs-10 mb-2 new_why_milkvilla_circle">
+												<img src="./images/milk-chilling.svg" class="card-img-top" style="padding-bottom: 0px;width: 80px;height: 80px;">
+												<p style="font-size: 26px; font-weight: bold;">Only Chilled</p><!-- Supporting Local Farmers -->
+												<p>No processing between farm and your home to ensure originality</p>
+											</div>
+											<div class="col-lg-3 col-xl-3 col-xxl-3 col-xxl-4 col-sm-10 col-md-10 col-xs-10 mb-2 new_why_milkvilla_circle card_spacing">
+												<img src="./images/no-plastic.svg" class="card-img-top" style="padding-bottom: 0px;width: 80px;height: 80px;">
+												<p style="font-size: 26px; font-weight: bold;">No Plastic</p>
+												<p>Say no to plastic packaging, take milk directly in your container</p>
+											</div>
+											<div class="col-lg-3 col-xl-3 col-xxl-3 col-sm-10 col-md-10 col-xs-10 mb-2 new_why_milkvilla_circle card_spacing">
+												<img src="./images/self-test2.svg" class="card-img-top" style="padding-bottom: 0px;width: 80px;height: 80px;">
+												<p style="font-size: 26px; font-weight: bold;">Self Test Kit</p>
+												<p>Free chemical test kit so you can self check the quality</p>
+											</div>
+							</div>
 		</section>
 		<!-- How it Works App Section -->
-		<section id="howitworks" class="site-section bg-light" style="background-color: #ffffff;height: auto;">
+		<section id="howitworks" class="site-section bg-light new_sec" style="background-color: #ffffff;height: auto;">
 				<div class="row mt-5 mb-2">
 					<div class="col-12 text-center">
-						<h2 class="section-title mb-0">How it Works</h2>
+						<h2 class="section-title mb-0">How it Works ?</h2>
 					</div>
 				</div>
 				<div class="row mb-0 d-flex justify-content-center ml-auto mr-auto">
@@ -316,7 +320,7 @@
 				<p style="text-align: center"><a href="https://play.google.com/store/apps/details?id=com.grobo.milkybay&hl=en" target="_blank" class="btn btn-funky btn-primary" title="Download MilkVilla">Download Milkvilla</a></p>
 		</section>
 		<!-- About Us Section -->
-		<section id="aboutmilkvilla" class="site-section bg-light" style="background-color: #ffffff;height: auto;">
+		<section id="aboutmilkvilla" class="site-section bg-light new_sec" style="background-color: #ffffff;height: auto;">
 				<div class="row mt-5 mb-2">
 					<div class="col-12 text-center">
 						<h2 class="section-title mb-0">About Milkvilla</h2>
@@ -334,17 +338,16 @@
 											<img src="../public/images/index_5.png" class="img-fluid">
 										</div>
 										<div class="col-lg-5 ml-auto mt-5">
-											<p class="mb-4 text-left" style="color: #000;">
-												Milkvilla is a village-based farmer’s enterprise run and managed with <br />the sole purpose of bringing natural taste, freshness, and aroma of milk to the community.
+											<p class="mb-4 text-left pl-2" style="color: #000;">
+												Milkvilla is a village-based farmer’s enterprise run and managed with the<br />sole purpose of bringing natural taste, freshness, and<br />aroma of milk to the community.
 											</p>
-											<h2 class="text-black mb-4 h3 font-weight-bold text-left">Uniqueness</h2>
-											<ul class="ul-check mb-5 list-unstyled success text-left" style="color: #000;">
+											<h2 class="text-black mb-4 h3 font-weight-bold text-left pl-2">Uniqueness</h2>
+											<ul class="ul-check mb-5 list-unstyled success text-left pl-2" style="color: #000;">
 												<li>Doorstep delivery system with hassle free dispenser</li>
 												<li>Zero adulteration</li>
 												<li>Best quality at lowest price</li>
 												<li>Technology enabled </li>
 											</ul>
-											<!-- <p><a href="./aboutus.html" class="btn btn-funky btn-primary">Learn More</a></p> -->
 										</div>
 									</div>
 								</div>
@@ -358,14 +361,14 @@
 													<img src="../public/images/mv_new_logo.jpg" class="img-fluid" style="border-radius: 60%; width: 300px;height: 300px;">
 												</div>
 												<div class="col-lg-5 ml-auto mt-5">
-													<p class="mb-4 text-left" style="color: #000;">
-														Introducing milkvilla, your seamless milk delivery service right at your doorstep. 
+													<p class="mb-4 text-left pl-2" style="color: #000;">
+														Introducing milkvilla, your seamless milk delivery service right at<br /> your doorstep. 
 														<br /><br />
-														Our mission is to make your life easier by ensuring you never run out of fresh,<br />high- quality milk again.
+														Our mission is to make your life easier by ensuring you never run out of<br />fresh, high- quality milk again.
 														<br /><br />
-														With milkvilla, you can enjoy the convenience of having milk delivered straight<br />to your door, saving you time and effort. 
+														With milkvilla, you can enjoy the convenience of having milk delivered<br />straight to your door, saving you time and effort. 
 														<br /><br />
-														Our reliable and efficient service guarantees that you will always have a steady<br />supply of milk, allowing you to focus on the things that matter most. 
+														Our reliable and efficient service guarantees that you will always have a<br />steady supply of milk, allowing you to focus on the things that matter most. 
 														<br /><br />
 														Experience the convenience of milkvilla and elevate your daily routine.
 													</p>
@@ -379,7 +382,7 @@
 				</div>
 		</section>
 		<!-- Team Section -->
-		<section class="site-section bg-light" id="meetourteam" style="height: auto;">
+		<section class="site-section bg-light new_sec" id="meetourteam" style="height: auto;">
 						<div class="row mt-5 mb-2 justify-content-center text-center">
 							<div class="col-7 text-center">
 								<h2 class="section-title">Meet Our Team</h2>
@@ -521,7 +524,7 @@
 						</div>
 		</section>
 		<!-- Embeded Youtube Video -->
-		<section id="ataglance" class="site-section bg-light" style="background-color: #ffffff;">
+		<section id="ataglance" class="site-section bg-light new_sec" style="background-color: #ffffff;">
 			<div class="container">
 						<div class="row mt-5 mb-2"><!-- data-aos="fade-up" -->
 							<div class="col-12 text-center">
@@ -539,82 +542,199 @@
 			</div>
 		</section>
 		<!-- Customer Google Review Section -->
-		<section id="customerreview" class="site-section bg-light" style="background-color: #ffffff;padding-top: 200px;">
+		<section id="customerreview" class="site-section bg-light new_sec" style="background-color: #ffffff;height: 100vh;padding-top: 200px;">
 			<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
 			<div class="elfsight-app-cc3856cd-71ed-451e-a7dd-caaa8a4334fa"></div>
 		</section>
 		<!-- Contact Us Section -->
-		<section id="contactmilkvilla" class="site-section"><!-- background-image: url('../public/images/contact_us_bg.png');background-position: center;background-repeat: no-repeat;background-size: cover; -->
+		<section id="contactmilkvilla" class="site-section bg-light new_sec" style="background-color: #ffffff;height: 100%;">
 									<div class="row mt-5 mb-2">
-										<div class="col-12 text-center">
+										<div class="col-12 text-center mt-0 mb-0">
 											<h2 class="section-title">Contact Milkvilla</h2>
 										</div>
 									</div>
-									<div class="row d-flex justify-content-end ml-auto mr-5">
-
-									</div>
-								<div class="row" style="position: absolute;bottom: 0;left: 0;right: 0;width: 100vw;">
-									<div class="footer-dark">
-										<footer>
-											<div class="container">
-												<div class="row mb-0 mt-0">
-													<img src="../public/images/milkvilla_text.svg" alt="Milkvilla" title="MilkVilla" width="80" height="80" />
+									<div class="row d-flex justify-content-end ml-5 mr-5 mt-5 mb-5">
+											<div class="col-lg-6 col-xl-6 col-xxl-6 col-sm-12 col-md-12 col-xs-12 text-left mt-5 mb-5">
+												<div class="row">
+													<h5 style="color: #fcdf12;">For More Information</h5>
 												</div>
-												<div class="row mb-2">
-													<p>We provide seamless milk delivery experience at your door step.</p>
+												<div class="row">
+													<h3>Hey, Let's Talk!</h3>
 												</div>
-												<div class="row mb-2">
-													<div class="col-sm-4 col-md-4 item mb-2" style="border-right: 1px solid #000000;height: 80px;">
-														<h3>Write Us</h3>
-														<ul>
-															<li><a href="mailto:contact@milkvilla.in">contact@milkvilla.in</a></li>
-														</ul>
-													</div>					
-													<div class="col-sm-4 col-md-4 item mb-2" style="border-right: 1px solid #000000;height: 80px;">
-														<h3>Address</h3>
-														<ul>
-															<li><a href="#">Veenu nagar, Shahbajpur, Muzaffarpur,<br />Bihar - 843117</a></li>
-														</ul>
-													</div>
-													<div class="col-md-4 col-md-4 item mb-2">
-														<h3>Phone</h3>
-														<li><a href="tel:+917059957095">+91-7059957095</a></li>
-													</div>
+												<div class="row">
+													<p>If you have anuy questions or problems simply use the following contact details.</p>
 												</div>
-												<div class="row mb-2">
-													<div class="col item social">
-														<a href="https://www.facebook.com/milkvilla.dairy" target="_blank" class="p-0"><span class="icon-facebook"></span></a>
-														<a href="https://www.linkedin.com/company/milkvilla" target="_blank" class="p-0"><span class="icon-linkedin"></span></a>
-														<a href="mailto:contact@milkvilla.in" target="_blank" class="p-0"><span class="icon-mail_outline"></span></a>
-													</div>
+												<div class="row">
+													<img />
+													<h5>Our Location</h5>
 												</div>
-												<div class="row mb-2">
-													<p class="copyright">Milkvilla©2023</p>
+												<div class="row">
+													<p><a href="#">Veenu nagar, Shahbajpur, Muzaffarpur, Bihar - 843117</a></p>
+												</div>
+												<div class="row">
+													<img />
+													<h5>Email Support</h5>
+												</div>
+												<div class="row">
+													<p>contact@milkvilla.in</p>
+												</div>
+												<div class="row">
+													<img />
+													<h5>Phone Number</h5>
+												</div>
+												<div class="row">
+													<p><a href="tel:+91-9006890881">+91-9006890881</a></p>
+												</div>
+												<div class="row">
+													<p>We will get back to you shortly.</p>
 												</div>
 											</div>
-										</footer>
+											<div class="col-lg-6 col-xl-6 col-xxl-6 col-sm-12 col-md-12 col-xs-12 text-left mt-5 mb-5">
+													<div class="row">
+														<h3 style="color: #fcdf12;">Send Us A Message</h3>
+													</div>
+													<div class="row">
+														<p>Please fill out the form below and our expert team will get back to you shortly.</p>
+													</div>
+													<div class="row mb-5">
+														<form class="contact_us_form" id="myForm">
+															<div class="row mb-2">
+																<div class="col-lg-6 col-xl-6 col-xxl-6 col-sm-12 col-md-12 col-xs-12">
+																	<label for="first_name" style="color: #fcdf12;">First Name *</label>
+																	<br />
+																	<input type="text" class="first_name" id="first_name" name="first_name" placeholder="First Name" required />
+																</div>
+																<div class="ccol-lg-6 col-xl-6 col-xxl-6 col-sm-12 col-md-12 col-xs-12">
+																	<label for="last_name" style="color: #fcdf12;">Last Name *</label>
+																	<br />
+																	<input type="text" class="last_name" id="last_name" name="last_name" placeholder="Last Name" required />
+																</div>
+															</div>
+															<div class="row mb-2">
+																<div class="col-lg-6 col-xl-6 col-xxl-6 col-sm-12 col-md-12 col-xs-12">
+																	<label for="email_address" style="color: #fcdf12;">Email Address *</label>
+																	<br />
+																	<input type="mail" class="email_address" id="email_address" name="email_address" placeholder="Email Address" required />
+																</div>
+																<div class="col-lg-6 col-xl-6 col-xxl-6 col-sm-12 col-md-12 col-xs-12">
+																	<label for="phone_number" style="color: #fcdf12;">Phone Number *</label>
+																	<br />
+																	<input type="number" class="phone_number" id="phone_number" name="phone_number" placeholder="Phone Number" required />
+																</div>
+															</div>
+															<div class="row mb-2">
+																<div class="col-lg-12 col-xl-12 col-xxl-12 col-sm-12 col-md-12 col-xs-12">
+																	<label for="subject" style="color: #fcdf12;">Subject *</label>
+																	<br />
+																	<input type="text" class="subject" id="subject" name="subject" placeholder="How can Milkvilla help you ?" required />
+																</div>
+															</div>
+															<div class="row mb-4">
+																<div class="col-lg-12 col-xl-12 col-xxl-12 col-sm-12 col-md-12 col-xs-12">
+																	<label for="comments" style="color: #fcdf12;">Comments / Questions *</label>
+																	<br />
+																	<textarea class="comments" id="comments" name="comments" placeholder="Comments" style="height:100px;" required></textarea>
+																</div>
+															</div>
+															<div class="row mb-2">
+																<div class="col-lg-12 col-xl-12 col-xxl-12 col-sm-12 col-md-12 col-xs-12">
+																	<button type="submit" class="submit_button">Send Message</button>
+																</div>
+															</div>
+														</form>
+													</div>
+													<!-- <div class="row">
+														<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+														<div class="elfsight-app-30e6d8fe-1df6-4891-a19f-af61768b0b92"></div>
+													</div> -->
+											</div>
 									</div>
+		</section>
+		<section id="footer" class="site-section bg-light new_sec" style="background-color: #ffffff;width: 100vw;position:relative;bottom: 0;"><!-- position: absolute;bottom: 0;left: 0;right: 0; -->
+				<div class="footer-dark">
+					<footer>
+						<div class="container">
+							<div class="row mb-0 mt-0">
+								<img src="../public/images/milkvilla_text.svg" alt="Milkvilla" title="MilkVilla" width="80" height="80" />
+							</div>
+							<div class="row mb-5">
+								<p>We provide seamless milk delivery experience at your door step.</p>
+							</div>
+							<div class="row mb-5">
+								<div class="col-sm-4 col-md-4 item mb-2" style="border-right: 1px solid #000000;height: 80px;">
+									<h3>Write Us</h3>
+									<ul>
+										<li><a href="mailto:contact@milkvilla.in">contact@milkvilla.in</a></li>
+									</ul>
+								</div>					
+								<div class="col-sm-4 col-md-4 item mb-2" style="border-right: 1px solid #000000;height: 80px;">
+									<h3>Address</h3>
+									<ul>
+										<li><a href="#">Veenu nagar, Shahbajpur, Muzaffarpur,<br />Bihar - 843117</a></li>
+									</ul>
 								</div>
+								<div class="col-md-4 col-md-4 item mb-2">
+									<h3>Phone</h3>
+									<li><a href="tel:+91-9006890881">+91-9006890881</a></li>
+								</div>
+							</div>
+							<div class="row mb-5">
+								<div class="col item social">
+									<a href="https://www.facebook.com/milkvilla.dairy" target="_blank" class="p-0"><span class="icon-facebook"></span></a>
+									<a href="https://www.linkedin.com/company/milkvilla" target="_blank" class="p-0"><span class="icon-linkedin"></span></a>
+									<a href="mailto:contact@milkvilla.in" target="_blank" class="p-0"><span class="icon-mail_outline"></span></a>
+								</div>
+							</div>
+							<div class="row mb-5">
+								<p class="copyright">Milkvilla©2023</p>
+							</div>
+						</div>
+					</footer>
+				</div>
 		</section>
 	</div>
-	</div>
-	<!-- </div> -->
+	</main>
 	<!-- .site-wrap -->
 	<script>
+		/* const contactUsForm = document.querySelector('.contact_us_form');
+		const firstName = document.querySelector('.first_name');
+		const lastName = document.querySelector('.last_name');
+		const emailAddress = document.querySelector('.email_address');
+		const phoneNumber = document.querySelector('.phone_number');
+		const subject = document.querySelector('.subject');
+		const comments = document.querySelector('.comments');
+		submit.addEventListener('click', (e)=> {
+			e.preventDefault();
+			db.collection('contact_us_form').doc().set(
+				{
+					firstName:firstName.value,
+					lastName:lastName.value,
+					emailAddress:emailAddress.value,
+					phoneNumber:phoneNumber.value,
+					subject:subject.value,
+					comments:comments.value
+				}
+			).then(()=>{
+				contactUsForm.reset();
+			})
+		}); */
+	</script>
+	<script>
 		// Counter Increment Number 
-        const targetNumber = 500;
-        const milkDeliveredNumberDisplay = document.getElementById('milkDelivered');
-        let currentNumber = 0;
-        const incrementNumber = () => 
-		{
-            if (currentNumber <= targetNumber) 
+
+		const targetNumber = 500;
+		const milkDeliveredNumberDisplay = document.getElementById('milkDelivered');
+		let currentNumber = 0;
+		const incrementNumber = () => 
 			{
-                milkDeliveredNumberDisplay.textContent = currentNumber;
-                currentNumber++;
-                setTimeout(incrementNumber, 20);
-            }
-        };
-        incrementNumber();
+				if (currentNumber <= targetNumber) 
+				{
+					milkDeliveredNumberDisplay.textContent = currentNumber;
+					currentNumber++;
+					setTimeout(incrementNumber, 20);
+				}
+			};
+		incrementNumber();
 
 		const targetNumberOne = 300;
 		const happyCustomersNumberDisplay = document.getElementById('happyCustomers');
@@ -657,6 +777,7 @@
             }
         };
         incrementNumberThree();
+
         /* document.addEventListener('DOMContentLoaded', () => 
         {
             let currentSectionIndex = 0;
@@ -759,5 +880,35 @@
 	<div id="fb-root"></div>
 	<!-- Your Chat Plugin code -->
 	<div id="fb-customer-chat" class="fb-customerchat"></div>
+	<script src="../public/firebase/firebase.js"></script>
+	<script>
+		const form = document.getElementById("myForm");
+		form.addEventListener("submit", (e) => {
+		e.preventDefault();
+		const first_name = document.getElementById("first_name").value;
+		const last_name = document.getElementById("last_name").value;
+		const email_address = document.getElementById("email_address").value;
+		const phone_number = document.getElementById("phone_number").value;
+		const subject = document.getElementById("subject").value;
+		const comments = document.getElementById("comments").value;
+		// Store the data in Firestore
+		db.collection("users").add({
+			first_name: first_name,
+			last_name: last_name,
+			email_address: email_address,
+			phone_number: phone_number,
+			subject: subject,
+			comments: comments
+		})
+		.then((docRef) => 
+		{
+			console.log("Document written with ID: ", docRef.id);
+		})
+		.catch((error) => 
+		{
+			console.error("Error adding document: ", error);
+		});
+		});
+	</script>
 </body>
 </html>

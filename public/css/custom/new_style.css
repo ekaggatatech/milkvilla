@@ -31,6 +31,8 @@
 html 
 {
     scroll-behavior: smooth !important;
+    height: 100%;
+    overflow: hidden;
 }
  body {
     font-family: 'Rubik-Regular';
@@ -40,6 +42,8 @@ html
 	font-style: normal;
     line-height: 26px;
     margin: 0;
+    height: 100%;
+    overflow: hidden;
 }
 .nav-link:focus, .nav-link:hover {
   color: #087462;
@@ -11806,18 +11810,31 @@ color: #fff;
 }
 .new_wrapper
 {
-    width: 100%;
+    /* width: 100%;
     height: 100vh;
     overflow-y: auto;
     scroll-snap-type: y mandatory;
+    overflow-x: hidden; */
+    position: relative;
+    height: 100%;
     overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 }
 section
 {
-  width: 100%;
-  height: 100vh;
+  /* width: 100%; height: 100vh;
+  scroll-snap-align: start; */
+  position: relative;
+  text-align: center;
+  height: 100%;
   scroll-snap-align: start;
 }
+::scrollbar {
+    display: none;
+  }
 /* Mobile View Header */
 .navbar
 {
@@ -12033,10 +12050,8 @@ section
 /* Why Milkvilla New CSS */
 .new_why_milkvilla_circle
 {
-    border-radius: 80%;
-    width: 160px;
-    height: 160px;
-    padding: 50px 10px 0px 10px;
+    border-radius: 18px;
+    padding: 2px 2px 2px 2px;
     background-color: #ffffff;
     text-align: center;
     color: #000000;
@@ -12049,6 +12064,17 @@ section
     color: #ffffff;
     background-color: #fdcc0d;
     border: 1px solid #fdcc0d;
+}
+.new_why_milkvilla_circle:hover img 
+{
+    filter: invert(100%);
+}
+@media only screen and (min-width: 992px)
+{
+    .card_spacing 
+    { 
+        margin-left: 20px; 
+    }
 }
 .module
 {
@@ -12067,6 +12093,7 @@ section
 {
     -webkit-transform: scale(1.3);
 	transform: scale(1.1);
+    transition: transform .60s ease;
 }
 /* New bottom to top scroll button css */
 /* .to-top {
@@ -12203,6 +12230,11 @@ section
     margin-left: auto;
     margin-right: auto;
 }
+.services-box:hover
+{
+    background-color: #fdba04;
+    color: #ffffff;
+}
 /* Custom Scroll Bar */
 .scroll-container 
 { 
@@ -12228,4 +12260,72 @@ section
 .scroll-container::-webkit-scrollbar-button 
 { 
     display: none; 
+}
+
+.new_sec
+{
+
+}
+
+.submit_button
+{
+    background-color: #fcdf12;
+    color: #ffffff;
+    border: 1px solid #fcdf12;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    border-radius: 8px 8px 8px 8px;
+}
+.submit_button:hover
+{
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+.contact_us_form
+{
+
+}
+.first_name
+{
+    width: 100%;
+    padding: 6px 6px 6px 6px;
+    border-radius: 8px 8px 8px 8px;
+    border: 1px solid #000000;
+}
+.last_name
+{
+    width: 100%;
+    padding: 6px 6px 6px 6px;
+    border-radius: 8px 8px 8px 8px;
+    border: 1px solid #000000;
+}
+.email_address
+{
+    width: 100%;
+    padding: 6px 6px 6px 6px;
+    border-radius: 8px 8px 8px 8px;
+    border: 1px solid #000000;
+}
+.phone_number
+{
+    width: 100%;
+    padding: 6px 6px 6px 6px;
+    border-radius: 8px 8px 8px 8px;
+    border: 1px solid #000000;
+}
+.subject
+{
+    width: 100%;
+    padding: 6px 6px 6px 6px;
+    border-radius: 8px 8px 8px 8px;
+    border: 1px solid #000000;
+}
+.comments
+{
+    width: 100%;
+    padding: 6px 6px 6px 6px;
+    border-radius: 8px 8px 8px 8px;
+    border: 1px solid #000000;
 }
