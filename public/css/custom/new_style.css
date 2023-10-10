@@ -2266,7 +2266,7 @@ transition: all 0.3s ease-out 0s;
     font-family: 'Rubik-Regular';
 }
 .services-box a:hover{
-    color: #006e2f;
+    color: #fdcc0d;
 }
 .service-details-three{
     margin-top: -230px;
@@ -11819,8 +11819,8 @@ color: #fff;
     height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
-    /* -webkit-overflow-scrolling: touch;
-    scroll-snap-type: y mandatory; */
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
 }
 section
@@ -11830,7 +11830,7 @@ section
   position: relative;
   text-align: center;
   height: 100%;
-  /* scroll-snap-align: start; */
+  scroll-snap-align: start;
 }
 /* ::scrollbar {
     display: none;
@@ -12044,8 +12044,8 @@ section
 /* Hero Section New CSS */
 .image-container
 {
-    display: inline-block;
-    position: relative;
+    /* display: inline-block;
+    position: relative; */
 }
 /* Why Milkvilla New CSS */
 .new_why_milkvilla_circle
@@ -12232,7 +12232,7 @@ section
 }
 .services-box:hover
 {
-    background-color: #fdba04;
+    background-color: #fdcc0d;
     color: #ffffff;
 }
 /* Custom Scroll Bar */
@@ -12341,4 +12341,30 @@ section
         border-right: 0px solid #000000 !important;
         height: unset !important;
     }
+}
+
+/* Scroll Bar by Neeraj */
+/* width */
+::-webkit-scrollbar 
+{
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track 
+{
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+  border: 1px solid black;
+}
+/* Handle */
+::-webkit-scrollbar-thumb 
+{
+  background: #fcdf12; 
+  border-radius: 10px;
+  border: 1px solid black;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover 
+{
+  background: gray; 
 }
