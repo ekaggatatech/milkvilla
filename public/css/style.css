@@ -3046,7 +3046,7 @@ section
 }
 .solution_cards_box .solution_card:hover
 {
-  background: #fcbb2d;
+  background: #fcdf12;
   color: #fff;
   transform: scale(1.1);
   z-index: 9;
@@ -3320,7 +3320,8 @@ section
   overflow: hidden;
   padding: 30px 2px;
   /* background: #fcbb2d; */
-  background: linear-gradient(#f9c34e, #fdb009);
+  /* background: linear-gradient(#f9c34e, #fdb009); */
+  background: #fcdf12;
   color: white;
   /* background: #7f7fd5;
   background: linear-gradient(to left, #9ff9f3, #98bcff); */
@@ -3391,12 +3392,12 @@ section
 
 .accordion .accordion-item
 {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #000000;
 }
 
 .accordion .accordion-item button[aria-expanded='true']
 {
-  border-bottom: 1px solid #03b5d2;
+  border-bottom: 1px solid #fcdf12;
 }
 
 .accordion button
@@ -3406,7 +3407,7 @@ section
   text-align: left;
   width: 100%;
   padding: 1em 0;
-  color: #7288a2;
+  color: #000000;
   font-size: 1.15rem;
   font-weight: 400;
   border: none;
@@ -3418,15 +3419,15 @@ section
 .accordion button:focus
 {
   cursor: pointer;
-  color: #03b5d2;
+  color: #fcdf12;
 }
 
 .accordion button:hover::after,
 .accordion button:focus::after
 {
   cursor: pointer;
-  color: #03b5d2;
-  border: 1px solid #03b5d2;
+  color: #fcdf12;
+  border: 1px solid #fcdf12;
 }
 
 .accordion button .accordion-title
@@ -3472,7 +3473,7 @@ section
 
 .accordion button[aria-expanded='true']
 {
-  color: #03b5d2;
+  color: #fcdf12;
 }
 
 .accordion button[aria-expanded='true'] .icon::after
@@ -3502,6 +3503,7 @@ section
   font-size: 1rem;
   font-weight: 300;
   margin: 2em 0;
+  text-align: left;
 }
 
 @media screen and (max-width : 768px)
@@ -3528,7 +3530,7 @@ section
 
   .FaQcontainer
   {
-    padding: 12rem 20px;
+    /* padding: 12rem 20px; */
     /* margin: 0; */
   }
 
@@ -6815,7 +6817,7 @@ section
 /* Style the tab */
 .tab {
   overflow: hidden;
-  border: 0px solid #fcbb2d;
+  border: 0px solid #fcdf12;
   background-color: transparent;
   border-radius: 8px;
   display: flex;
@@ -6828,7 +6830,7 @@ section
 .tab button {
   background-color: #ffffff;
   float: left;
-  border: 2px solid #fcbb2d;
+  border: 2px solid #fcdf12;
   outline: none;
   cursor: pointer;
   padding: 14px 20px;
@@ -6842,19 +6844,19 @@ section
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #fcbb2d;
+  background-color: #fcdf12;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #fcbb2d;
+  background-color: #fcdf12;
 }
 
 /* Style the tab content */
 .tabcontent {
   display: none;
   /* padding: 6px 12px; */
-  border: 2px solid #fcbb2d;
+  border: 2px solid #fcdf12;
   /* border-top: none; */
   border-radius: 8px;
   width: auto;
@@ -6862,14 +6864,14 @@ section
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  background-color: #fcbb2d;
+  background-color: #fcdf12;
 }
 
 .tabcontent.active
 {
   display: block;
   /* padding: 6px 12px; */
-  border: 2px solid #fcbb2d;
+  border: 2px solid #fcdf12;
   /* border-top: none; */
   border-radius: 8px;
 }
