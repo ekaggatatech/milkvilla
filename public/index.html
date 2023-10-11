@@ -587,7 +587,7 @@
 													<h3>Hey, Let's Talk!</h3>
 												</div>
 												<div class="row">
-													<p>If you have anuy questions or problems simply use the following contact details.</p>
+													<p>If you have any questions or problems simply use the following contact details.</p>
 												</div>
 												<div class="row">
 													<div>
@@ -723,6 +723,7 @@
 	</div>
 	</main>
 	<!-- .site-wrap -->
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<script src="https://smtpjs.com/v3/smtp.js"></script>
 	<script>
 		// Contact Us Form Data to Google Sheet
@@ -753,15 +754,14 @@
 
 		function emailSend()
 		{
-			alert('pooja');
 			var first_name = document.getElementById('first_name').value;
 			alert(first_name);
 			var last_name = document.getElementById('last_name').value;
 			alert(last_name);
-			var phone_number = document.getElementById('phone_number').value;
-			alert(phone_number);
 			var email_address = document.getElementById('email_address').value;
 			alert(email_address);
+			var phone_number = document.getElementById('phone_number').value;
+			alert(phone_number);
 			var subject = document.getElementById('subject').value;
 			alert(subject);
 			var comments = document.getElementById('comments').value;
