@@ -11839,7 +11839,7 @@ section
 .navbar
 {
 	border-radius: 0 !important;
-	background-color: white;
+	background-color: transparent;
     position: fixed;
     z-index: 1;
     width: 100%;
@@ -11862,7 +11862,8 @@ section
 	font-size: 15px;
     color: black;
     font-weight: bolder;
-    font-family: 'PT Serif', serif;
+    font-family: 'Rubik-Regular';
+    background-color: #ffffff;
 }
 .navbar-nav li a:hover
 {
@@ -12042,11 +12043,11 @@ section
     }
 }
 /* Hero Section New CSS */
-.image-container
+/* .image-container
 {
-    /* display: inline-block;
-    position: relative; */
-}
+    display: inline-block;
+    position: relative;
+} */
 /* Why Milkvilla New CSS */
 .new_why_milkvilla_circle
 {
@@ -12342,8 +12343,6 @@ section
         height: unset !important;
     }
 }
-
-/* Scroll Bar by Neeraj */
 /* width */
 ::-webkit-scrollbar 
 {
@@ -12367,4 +12366,25 @@ section
 ::-webkit-scrollbar-thumb:hover 
 {
   background: gray; 
+}
+/* Home Page Cover Video CSS */
+#myVideo 
+{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    /* position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; */
+    /* z-index: -1; */
+    opacity: 1;
+}
+@media (max-width:480px) 
+{
+    #myVideo 
+    {
+        object-fit: unset !important;
+    }
 }

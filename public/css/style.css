@@ -3058,6 +3058,7 @@ section
 .solution_cards_box .solution_card:hover .solu_description p
 {
   color: #fff;
+  text-align: left;
 }
 .solution_cards_box .solution_card:before
 {
@@ -3084,12 +3085,13 @@ section
   font-size: 1rem;
   margin-top: 16px;
   margin-bottom: 16px; 
-  margin-left: 20px;
+  text-align: left;
 }
 .solution_card .solu_description p
 {
   font-size: 15px;
   margin-bottom: 15px;
+  text-align: left;
 }
 .solution_card .solu_description button
 {
@@ -6890,7 +6892,6 @@ section
   height: 10px !important;
 }
 
-/* Scroll Bar by Neeraj */
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -6913,4 +6914,10 @@ section
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: gray; 
+}
+
+/* to get remove faq section border */
+.accordion 
+{
+  --bs-accordion-border-color: unset !important;
 }
