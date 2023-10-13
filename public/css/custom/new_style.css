@@ -12397,16 +12397,16 @@ section
     {
         object-fit: fill !important;
         height: 80vh !important;
+        padding-top: 20px !important;
     }
-    .new_wrapper 
+    /* .new_wrapper 
     {
         overflow-y: hidden !important;
-    }
+    } */
     .franchise_bg_img
     {
         background-size: contain !important;
     }
-
 }
 /* Blogs Page Tab View CSS */
 .tab 
