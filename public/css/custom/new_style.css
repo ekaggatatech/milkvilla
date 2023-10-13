@@ -12397,7 +12397,7 @@ section
     }
     .download_milvilla_button
     {
-        bottom: 14%;
+        bottom: 10% !important;
     }
 }
 /* Blogs Page Tab View CSS */
