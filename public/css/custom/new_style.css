@@ -12367,6 +12367,15 @@ section
 {
   background: gray; 
 }
+/* Download Milkvilla Button CSS */
+.download_milvilla_button
+{
+    text-align: center !important;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
 /* Home Page Cover Video CSS */
 #myVideo 
 {
@@ -12374,10 +12383,6 @@ section
 }
 @media (max-width:1300px) 
 {
-    #myVideo 
-    {
-        height: 100vh !important;
-    }
     .new_wrapper
     {
         scroll-snap-type: unset !important;
@@ -12385,6 +12390,14 @@ section
     section
     {
         scroll-snap-align: unset !important;
+    }
+    #myVideo 
+    {
+        height: 100vh !important;
+    }
+    .download_milvilla_button
+    {
+        bottom: 14%;
     }
 }
 /* Blogs Page Tab View CSS */
