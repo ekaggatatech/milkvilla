@@ -12378,6 +12378,23 @@ section
     {
         height: 100vh !important;
     }
+    .new_wrapper
+    {
+        position: relative;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+    }
+    section
+    {
+        position: relative;
+        text-align: center;
+        height: 100%;
+        scroll-snap-align: start;
+    }
 }
 /* Blogs Page Tab View CSS */
 .tab 
