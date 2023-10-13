@@ -12371,15 +12371,18 @@ section
 .download_milvilla_button
 {
     text-align: center !important;
-    position: absolute;
+    /* position: absolute;
     bottom: 0;
     left: 0;
-    right: 0;
+    right: 0; */
 }
 /* Home Page Cover Video CSS */
 #myVideo 
 {
     opacity: 1;
+    height: 90vh;
+    object-fit: fill;
+    padding-top: 100px;
 }
 @media (max-width:1300px) 
 {
@@ -12393,11 +12396,8 @@ section
     }
     #myVideo 
     {
-        height: 100vh !important;
-    }
-    .download_milvilla_button
-    {
-        bottom: 6% !important;
+        object-fit: fill !important;
+        height: 80vh !important;
     }
 }
 /* Blogs Page Tab View CSS */
