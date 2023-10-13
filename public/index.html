@@ -636,7 +636,7 @@
 																<div class="col-lg-6 col-xl-6 col-xxl-6 col-sm-12 col-md-12 col-xs-12">
 																	<label for="phone_number" style="color: #fcdf12;">Phone Number *</label>
 																	<br />
-																	<input type="number" class="phone_number" id="phone_number" name="phone_number" placeholder="Phone Number" required />
+																	<input type="number" class="phone_number" id="phone_number" name="phone_number" placeholder="Phone Number" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==10) return false;" required />
 																</div>
 															</div>
 															<div class="row mb-2">
@@ -712,7 +712,6 @@
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<script src="https://smtpjs.com/v3/smtp.js"></script>
 	<script>
-		// Contact Us Form Data to Mail ID
 		function emailSend()
 		{
 			var first_name = document.getElementById('first_name').value;
@@ -735,8 +734,7 @@
 			Host : "smtp.elasticemail.com",
 			Username: "web-notifications@milkvilla.in",
 			Password: "5AA516056E0DA5D6771086FD7CEADC577D8A",
-			// To: 'contact@milkvilla.in',
-			To: 'pooja.dhamanekar@ekaggata.com',
+			To: 'contact@milkvilla.in',
 			From : "web-notifications@milkvilla.in",
 			Subject : "Milkvilla Contact Us Form Details",
 			Body : messageBody
@@ -754,16 +752,16 @@
 			}
 			);
 		}
-		// Contact Us Form Data to Google Sheet
-		const scriptURL = 'https://script.google.com/macros/s/AKfycbydZvbmDnqVdJJMfbCTGtVRbBOKAITk0GNwXnSg33xGI_K4TgW2LrjF_WU6Jc3xXfGGRw/exec';
+		/* const scriptURL = 'https://script.google.com/macros/s/AKfycby4-5_zYwMh0WNxBTh6PtWbOYGMSQQAgy2_j7IjmSxFwX5pch7gvNaq9plVENCjJgoTYA/exec';
 		const form = document.forms['contact-form'];
-		form.addEventListener('submit', e => {
-		e.preventDefault()
-		fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-		.then(response => alert("Thank you! your form is submitted successfully." ))
-		.then(() => { window.location.reload(); })
-		.catch(error => console.error('Error!', error.message))
-		})
+		form.addEventListener('submit', e => 
+		{
+			e.preventDefault()
+			fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+			.then(response => alert("Thank you! your form is submitted successfully." ))
+			.then(() => { window.location.reload(); })
+			.catch(error => console.error('Error!', error.message))
+		}); */
 	</script>
 	<script>
 			// Counter Increment Number 
