@@ -1,8 +1,7 @@
-/* Base */
 @font-face 
 {
     font-family: 'Rubik-Regular';
-    src: url('../../fonts/Rubik/Rubik-Regular.ttf') format('truetype');
+    src: url('../fonts/Rubik/Rubik-Regular.ttf') format('truetype');
 }
 html {
   scroll-behavior: smooth;
