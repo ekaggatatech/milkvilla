@@ -12382,8 +12382,8 @@ section
     height: 100%;
 }
 .video-wrapper video {
-    object-fit: cover;
-    width: 100%;
+    /* object-fit: cover; */
+    /* width: 100%; */
     padding-top: 100px;
     height: 90vh;
 }
@@ -12401,8 +12401,8 @@ section
     /* background-size: cover; 
     min-width: 100%; */
     /* z-index: 0; */
-    object-fit: fill;
-    width: 100%;
+    /* object-fit: cover; */
+    /* width: 100%; */
     padding-top: 100px;
     height: 90vh;
 }
