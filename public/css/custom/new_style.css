@@ -11839,7 +11839,7 @@ section
 .navbar
 {
 	border-radius: 0 !important;
-	background-color: transparent;
+	background-color: #ffffff;
     position: fixed;
     z-index: 1;
     width: 100%;
@@ -11863,7 +11863,6 @@ section
     color: black;
     font-weight: bolder;
     font-family: 'Rubik-Regular';
-    background-color: #ffffff;
 }
 .navbar-nav li a:hover
 {
@@ -12399,6 +12398,15 @@ section
         object-fit: fill !important;
         height: 80vh !important;
     }
+    .new_wrapper 
+    {
+        overflow-y: hidden !important;
+    }
+    .franchise_bg_img
+    {
+        background-size: contain !important;
+    }
+
 }
 /* Blogs Page Tab View CSS */
 .tab 
@@ -12431,4 +12439,13 @@ section
     border: 0px solid #ccc;
     border-top: none;
     background-color: transparent;
+}
+/* Franchise background image CSS */
+.franchise_bg_img
+{
+    background-image: url('../../images/franchise_bg_image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
 }
