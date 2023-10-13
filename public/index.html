@@ -708,16 +708,6 @@
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<script src="https://smtpjs.com/v3/smtp.js"></script>
 	<script>
-		// Contact Us Form Data to Google Sheet
-		const scriptURL = 'https://script.google.com/macros/s/AKfycbydZvbmDnqVdJJMfbCTGtVRbBOKAITk0GNwXnSg33xGI_K4TgW2LrjF_WU6Jc3xXfGGRw/exec';
-		const form = document.forms['contact-form'];
-		form.addEventListener('submit', e => {
-		e.preventDefault()
-		fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-		.then(response => alert("Thank you! your form is submitted successfully." ))
-		.then(() => { window.location.reload(); })
-		.catch(error => console.error('Error!', error.message))
-		})
 		// Contact Us Form Data to Mail ID
 		function emailSend()
 		{
@@ -760,6 +750,16 @@
 			}
 			);
 		}
+		// Contact Us Form Data to Google Sheet
+		const scriptURL = 'https://script.google.com/macros/s/AKfycbydZvbmDnqVdJJMfbCTGtVRbBOKAITk0GNwXnSg33xGI_K4TgW2LrjF_WU6Jc3xXfGGRw/exec';
+		const form = document.forms['contact-form'];
+		form.addEventListener('submit', e => {
+		e.preventDefault()
+		fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+		.then(response => alert("Thank you! your form is submitted successfully." ))
+		.then(() => { window.location.reload(); })
+		.catch(error => console.error('Error!', error.message))
+		})
 	</script>
 	<script>
 			// Counter Increment Number 

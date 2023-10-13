@@ -719,6 +719,60 @@
 <!-- .site-wrap -->
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script>
+		// Contact Us Form Data to Mail ID
+		function emailSend()
+				{
+					var first_name = document.getElementById('first_name').value;
+					var last_name = document.getElementById('last_name').value;
+					var email_address = document.getElementById('email_address').value;
+					var phone_number = document.getElementById('phone_number').value;
+					var subject = document.getElementById('subject').value;
+					var comments = document.getElementById('comments').value;
+					var messageBody = "Hi," +
+					"<br/><br/>You have received new contact enquiry for Milkvilla. Please check the following details." +
+					"<br/><br/> First Name: " + first_name +
+					"<br/> Last Name: " + last_name +
+					"<br/> Phone Number: " + phone_number +
+					"<br/> Email Address: " + email_address +
+					"<br/> Subject: " + subject +
+					"<br/> Comments: " + comments +
+					"<br/><br/> Thank You," + 
+					"<br/>" + first_name + " " + last_name;
+					Email.send({
+					Host : "smtp.elasticemail.com",
+					Username: "web-notifications@milkvilla.in",
+					Password: "5AA516056E0DA5D6771086FD7CEADC577D8A",
+					// To: 'contact@milkvilla.in',
+					To: 'pooja.dhamanekar@ekaggata.com',
+					From : "web-notifications@milkvilla.in",
+					Subject : "Milkvilla Contact Us Form Details",
+					Body : messageBody
+					}).then(
+					message => 
+					{
+						if(message=='OK')
+						{
+							swal("Secussful", "You clicked the button!", "success");
+						}
+						else
+						{
+							swal("Error", "You clicked the button!", "error");
+						}
+					}
+					);
+				}
+				// Contact Us Form Data to Google Sheet
+				const scriptURL = 'https://script.google.com/macros/s/AKfycbydZvbmDnqVdJJMfbCTGtVRbBOKAITk0GNwXnSg33xGI_K4TgW2LrjF_WU6Jc3xXfGGRw/exec';
+				const form = document.forms['contact-form'];
+				form.addEventListener('submit', e => {
+				e.preventDefault()
+				fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+				.then(response => alert("Thank you! your form is submitted successfully." ))
+				.then(() => { window.location.reload(); })
+				.catch(error => console.error('Error!', error.message))
+				})
+	</script>
 	<script src="js/FaQscript.js"></script>
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -727,60 +781,6 @@
 	<script src="js/franchise.js"></script>
 	<div id="fb-root"></div>
 	<div id="fb-customer-chat" class="fb-customerchat"></div>
-	<script>
-		// Contact Us Form Data to Google Sheet
-		const scriptURL = 'https://script.google.com/macros/s/AKfycbydZvbmDnqVdJJMfbCTGtVRbBOKAITk0GNwXnSg33xGI_K4TgW2LrjF_WU6Jc3xXfGGRw/exec';
-		const form = document.forms['contact-form'];
-		form.addEventListener('submit', e => {
-		e.preventDefault()
-		fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-		.then(response => alert("Thank you! your form is submitted successfully." ))
-		.then(() => { window.location.reload(); })
-		.catch(error => console.error('Error!', error.message))
-		})
-		// Contact Us Form Data to Mail ID
-		function emailSend()
-		{
-			var first_name = document.getElementById('first_name').value;
-			var last_name = document.getElementById('last_name').value;
-			var email_address = document.getElementById('email_address').value;
-			var phone_number = document.getElementById('phone_number').value;
-			var subject = document.getElementById('subject').value;
-			var comments = document.getElementById('comments').value;
-			var messageBody = "Hi," +
-			"<br/><br/>You have received new contact enquiry for Milkvilla. Please check the following details." +
-			"<br/><br/> First Name: " + first_name +
-			"<br/> Last Name: " + last_name +
-			"<br/> Phone Number: " + phone_number +
-			"<br/> Email Address: " + email_address +
-			"<br/> Subject: " + subject +
-			"<br/> Comments: " + comments +
-			"<br/><br/> Thank You," + 
-			"<br/>" + first_name + " " + last_name;
-			Email.send({
-			Host : "smtp.elasticemail.com",
-			Username: "web-notifications@milkvilla.in",
-			Password: "5AA516056E0DA5D6771086FD7CEADC577D8A",
-			// To: 'contact@milkvilla.in',
-			To: 'pooja.dhamanekar@ekaggata.com',
-			From : "web-notifications@milkvilla.in",
-			Subject : "Milkvilla Contact Us Form Details",
-			Body : messageBody
-			}).then(
-			message => 
-			{
-				if(message=='OK')
-				{
-					swal("Secussful", "You clicked the button!", "success");
-				}
-				else
-				{
-					swal("Error", "You clicked the button!", "error");
-				}
-			}
-			);
-		}
-	</script>
 	<script>
 		var chatbox = document.getElementById('fb-customer-chat');
 		chatbox.setAttribute("page_id", "2407484409538326");
