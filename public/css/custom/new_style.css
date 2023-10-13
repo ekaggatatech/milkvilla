@@ -12378,10 +12378,16 @@ section
 /* Home Page Cover Video CSS */
 #myVideo 
 {
-    opacity: 1;
+    /* opacity: 1;
     height: 90vh;
-    object-fit: fill;
+    width: 100vw;
     padding-top: 100px;
+    object-fit: cover; */
+    padding-top: 100px;
+    height: 90vh;
+    /* width: 100%; */
+    object-fit: fill; 
+    /* z-index: 0; */
 }
 @media (max-width:1300px) 
 {
@@ -12399,10 +12405,6 @@ section
         height: 80vh !important;
         padding-top: 20px !important;
     }
-    /* .new_wrapper 
-    {
-        overflow-y: hidden !important;
-    } */
     .franchise_bg_img
     {
         background-size: contain !important;
