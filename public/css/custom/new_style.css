@@ -12396,7 +12396,6 @@ section
     /* width: 100%; */
     /* object-fit: fill; */
     /* background-size: cover; */
-    /* z-index: 0; */
     object-fit: cover;
     height: 90vh;
     opacity: 1;
