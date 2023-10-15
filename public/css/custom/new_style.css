@@ -12381,30 +12381,25 @@ section
     width: 100%;
     height: 100%;
 }
-.video-wrapper video {
-    /* object-fit: cover; */
-    /* width: 100%; */
-    padding-top: 100px;
+.video-wrapper video 
+{
+    object-fit: cover;
     height: 90vh;
+    opacity: 1;
 }
 #myVideo 
 {
-    /* opacity: 1;
-    height: 90vh;
+    /* height: 90vh;
     width: 100vw;
     padding-top: 100px;
     object-fit: cover; */
-    /* padding-top: 100px;
-    height: 90vh; */
     /* width: 100%; */
     /* object-fit: fill; */
-    /* background-size: cover; 
-    min-width: 100%; */
+    /* background-size: cover; */
     /* z-index: 0; */
-    /* object-fit: cover; */
-    /* width: 100%; */
-    padding-top: 100px;
+    object-fit: cover;
     height: 90vh;
+    opacity: 1;
 }
 @media (max-width:1300px) 
 {
@@ -12420,7 +12415,6 @@ section
     {
         object-fit: fill !important;
         height: 80vh !important;
-        padding-top: 20px !important;
     }
     .franchise_bg_img
     {
