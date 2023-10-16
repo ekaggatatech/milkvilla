@@ -12397,7 +12397,7 @@ section
     /* object-fit: fill; */
     /* background-size: cover; */
     object-fit: cover;
-    height: 90vh;
+    height: 80vh;
     opacity: 1;
 }
 @media (max-width:1300px) 
