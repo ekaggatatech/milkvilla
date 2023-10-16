@@ -12386,6 +12386,7 @@ section
     object-fit: cover;
     height: 90vh;
     opacity: 1;
+    padding-top: 100px;
 }
 #myVideo 
 {
@@ -12397,8 +12398,9 @@ section
     /* object-fit: fill; */
     /* background-size: cover; */
     object-fit: cover;
-    height: 80vh;
+    height: 90vh;
     opacity: 1;
+    padding-top: 100px;
 }
 @media (max-width:1300px) 
 {
