@@ -60,41 +60,46 @@
                     </div>
                 </div>
             </header>
-            <header id="top_nav" class="top_nav">
-                <div class="navbar navbar-default">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuItems" aria-controls="menuItems" aria-expanded="false" aria-label="Toggle Navigation">
-                            <img src="../public/images/open-menu.png" alt="Milkvilla Menu List" title="Click to open menu list" width="40" height="40" />
-                        </button>
-                    </div>
-                    <div class="navbar-collapse collapse" id="menuItems">
-                        <ul class="nav navbar-nav pull-left">
-                            <li><a href="index.html"><img class="navbar-brand" src="../public/images/mv_new_logo.jpg" alt="Milkvilla" title="Milkvilla" /></a></li>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="franchise.html">Franchise</a></li>
-                        </ul>
-                    </div>
-                    </div>
-                </div>
-            </header>
-        <br /><br /><br /><br />
-        <div class="container">
-            <div class="row d-flex justify-content-center ml-auto mr-auto mt-0 mb-2">
+            <header id="top_nav" class="top_nav navbar navbar-default">
+				<div class="navbar-header">
+					<div class="row mt-0 mb-0 pt-0 pb-0 ml-0 mr-0 pl-0 pr-0">
+						<div class="col col-lg-12 col-sm-6 d-flex justify-content-start ml-0 mr-auto align-items-center">
+							<button class="" type="button" data-bs-toggle="collapse" data-bs-target="#menuItems" aria-controls="menuItems" aria-expanded="false" aria-label="Toggle Navigation" style="background: transparent;border: 0px solid transparent;">
+								<img class="navbar-toggler" src="../public/images/open-menu.png" alt="Milkvilla Menu List" title="Click to open menu list" width="40" height="40" />
+							</button>
+						</div>
+						<div class="col col-lg-12 col-sm-6 d-flex justify-content-end ml-auto mr-0 align-items-center">
+							<a href="index.html"><img src="../public/images/milkvilla_text.svg" alt="Milkvilla" title="Milkvilla" width="80" height="80" /></a>
+						</div>
+					</div>
+        		</div>
+				<div class="navbar-collapse collapse" id="menuItems">
+          			<ul class="nav navbar-nav pull-left" style="overflow-y: auto !important;">
+						<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="franchise.html">Franchise</a></li>
+    				</ul>
+        		</div>
+		  </header>
+          <br /><br /><br /><br />
+            <!-- <div class="row d-flex justify-content-center ml-auto mr-auto mt-0 mb-2">
                 <h3 style="color: #454545;font-weight: bold;text-align: center;">
                     Our Blogs
                 </h3>
-            </div>
-            <div class="row d-flex justify-content-center ml-auto mr-auto mt-0 mb-4">
-                <div class="tab">
-                    <button class="tablinks" onclick="openBlog(event, 'BlogOne')" id="defaultOpen">Revolutionizing Dairy</button>
-                    <button class="tablinks ml-4" onclick="openBlog(event, 'BlogTwo')"> Hyperlocal Fresh Milk Delivery</button>
-                    <button class="tablinks ml-4" onclick="openBlog(event, 'BlogThree')">Future of Fresh Milk Delivery</button>
+            </div> -->
+            <div class="row d-flex justify-content-center ml-auto mr-auto mt-0 mb-2">
+                <div class="container">
+                    <div class="tab text-center">
+                        <button class="tablinks text-center" onclick="openBlog(event, 'BlogOne')" id="defaultOpen" style="text-align: center;">Revolutionizing Dairy</button>
+                        <button class="tablinks ml-2 text-center" onclick="openBlog(event, 'BlogTwo')" style="text-align: center;"> Hyperlocal Fresh Milk Delivery</button>
+                        <button class="tablinks ml-2 text-center" onclick="openBlog(event, 'BlogThree')" style="text-align: center;">Future of Fresh Milk Delivery</button>
+                    </div>
                 </div>
             </div>
             <div id="BlogOne" class="row tabcontent">
-                <div class="row d-flex justify-content-center ml-auto mr-auto mt-0 mb-3">
-                    <img src="../public/images/Revolutionizing Dairy Doorstep Fresh Milk Collection and Delivery.jpg" alt="Milkvilla" title="milkvilla" style="width: 100%;height: 540px;" />
+                <div class="row d-flex justify-content-center ml-auto mr-auto mt-0 mb-2">
+                    <div class="container">
+                        <img src="../public/images/Revolutionizing Dairy Doorstep Fresh Milk Collection and Delivery.jpg" alt="Milkvilla" title="milkvilla" />
+                    </div>
                 </div>
                 <div class="row d-flex justify-content-center ml-auto mr-auto mt-0 mb-2">
                     <h3 style="color: #454545;font-weight: bold;text-align: center;">
@@ -552,8 +557,10 @@
                 </div>
             </div>
             <div id="BlogTwo" class="row tabcontent">
-                <div class="row d-flex justify-content-center ml-auto mr-auto mt-0 mb-3">
-                    <img src="../public/images/Non-Packaged, Pure, and Perfect Hyperlocal Fresh Milk Delivered to Your Doorstep.jpg" alt="Milkvilla" title="milkvilla" style="width: 100%;height: 540px;" />
+                <div class="row d-flex justify-content-center ml-auto mr-auto mt-0 mb-2">
+                    <div class="container">
+                        <img src="../public/images/Non-Packaged, Pure, and Perfect Hyperlocal Fresh Milk Delivered to Your Doorstep.jpg" alt="Milkvilla" title="milkvilla" />
+                    </div>
                 </div>
                 <div class="row d-flex justify-content-center ml-auto mr-auto mt-0 mb-2">
                     <h3 style="color: #454545;font-weight: bold;text-align: center;">
@@ -681,8 +688,10 @@
                 </div>
             </div>
             <div id="BlogThree" class="row tabcontent">
-                <div class="row d-flex justify-content-center ml-auto mr-auto mt-0 mb-3">
-                    <img src="../public/images/Blog banner milkvilla.jpg" alt="Milkvilla" title="milkvilla" style="width: 100%;height: 540px;" />
+                <div class="row d-flex justify-content-center ml-auto mr-auto mt-0 mb-2">
+                    <div class="container">
+                        <img src="../public/images/Blog banner milkvilla.jpg" alt="Milkvilla" title="milkvilla" />
+                    </div>
                 </div>
                 <div class="row d-flex justify-content-center ml-auto mr-auto mt-0 mb-2">
                     <h3 style="color: #454545;font-weight: bold;text-align: center;">
@@ -817,7 +826,6 @@
                     </p>
                 </div>
             </div> 
-        </div>
             <div id="footer" class="bg-light new_sec" style="background-color: #ffffff;width: 100vw;position:relative;bottom: 0;">
 				<div class="footer-dark">
 					<footer>
@@ -878,6 +886,12 @@
             evt.currentTarget.className += " active";
         }
         document.getElementById("defaultOpen").click();
+    </script>
+    <script>
+        $('.navbar-nav>li>a').on('click', function()
+        {
+            $('.navbar-collapse').collapse('hide');
+        });
     </script>
 </body>
 </html>

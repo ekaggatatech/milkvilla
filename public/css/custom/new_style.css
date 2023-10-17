@@ -12270,11 +12270,12 @@ section
 .submit_button
 {
     background-color: #fcdf12;
-    color: #ffffff;
+    color: #000000;
     border: 1px solid #fcdf12;
     width: 100%;
     padding: 10px 10px 10px 10px;
     border-radius: 8px 8px 8px 8px;
+    font-weight: bold;
 }
 .submit_button:hover
 {
@@ -12569,4 +12570,8 @@ button:focus {
     background: #000000 !important;
     color: #FFF;
     text-decoration: none;
+}
+.owl-carousel 
+{
+    z-index: unset !important;
 }
