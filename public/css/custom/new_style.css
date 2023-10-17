@@ -2235,7 +2235,7 @@ section:hover .section-title h2::before{width: 100px;}
 .services-box{
      border-radius: 8px;
   background-color: #fff;
-    padding: 40px 50px;
+    padding: 20px 20px;
     -webkit-transition: all 0.3s ease-out 0s;
 -moz-transition: all 0.3s ease-out 0s;
 -ms-transition: all 0.3s ease-out 0s;
@@ -11870,7 +11870,7 @@ section
 }
 .navbar-brand
 {
-	margin-top: 10px;
+	/* margin-top: 10px; */
 }
 .navbar-toggler:focus 
 {
@@ -12221,7 +12221,7 @@ section
 .counter_increment_box_text
 {
     border-radius: 80%;
-    border: 4px dotted #fcdf12;
+    border: 2px solid #fcdf12;
     width: 120px;
     height: 120px;
     padding-top: 45px;
@@ -12334,12 +12334,28 @@ section
     border-right: 1px solid #000000;
     height: 80px;
 }
-@media (max-width: 480px) 
+.mobile_view_counter_data_bottom_margin
+{
+    margin-bottom: 0px;
+}
+.meet_our_team_section_height_mgt
+{
+    height: 100vh;
+}
+@media (max-width: 500px) 
 {
     .footer_border
     {
         border-right: 0px solid #000000 !important;
         height: unset !important;
+    }
+    .mobile_view_counter_data_bottom_margin
+    {
+        margin-bottom: 40px !important;
+    }
+    .meet_our_team_section_height_mgt
+    {
+        height: auto !important;
     }
 }
 /* width */
@@ -12369,6 +12385,13 @@ section
 /* Download Milkvilla Button CSS */
 .download_milvilla_button
 {
+    text-align: center !important;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    background-color: #fcdf12;
+    border-radius: 60%;
+    padding: 20px 20px 20px 20px;
     text-align: center !important;
     /* position: absolute;
     bottom: 0;
@@ -12414,16 +12437,13 @@ section
     }
     #myVideo 
     {
-        object-fit: fill !important;
+        /* object-fit: fill !important; */
+        /* object-fit: cover !important; */
         height: 80vh !important;
     }
     .franchise_bg_img
     {
         background-size: contain !important;
-    }
-    .embed-responsive
-    {
-        height: 100vh !important;
     }
 }
 /* Blogs Page Tab View CSS */

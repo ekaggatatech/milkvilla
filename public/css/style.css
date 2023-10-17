@@ -6417,19 +6417,22 @@ section
 
 
 .profile-card-2 {
-  width: 220px;
-  height: 220px;
+  /* width: 120px;
+  height: 120px; */
+  width: auto;
+  height: auto;
+  background: #fcdf12;
   background-color: #fcdf12;
-  /* box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1); */
-  background-position: center;
   overflow: hidden;
-  /* position: relative; */
-  /* margin: 10px auto; */
+  padding: 10px 10px 0px 10px;;
   cursor: pointer;
   border-radius: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .profile-card-2 img {
@@ -6441,33 +6444,34 @@ section
   /* position: absolute;
   left: 30px;
   bottom: 70px; */
-  font-size: 20px;
+  font-size: 16px;
   color: black;
   /* text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); */
   font-weight: bold;
   transition: all linear 0.25s;
-  text-align: center;
+  text-align: center !important;
 }
 
 .profile-card-2 .profile-icons {
-  position: absolute;
+  /* position: absolute;
   bottom: 30px;
-  right: 30px;
+  right: 30px; */
   color: #FFF;
   transition: all linear 0.25s;
 }
 
 .profile-card-2 .profile-username {
-  position: absolute;
+  /* position: absolute;
   bottom: 50px;
-  left: 30px;
+  left: 30px; */
   color: #FFF;
-  font-size: 13px;
+  font-size: 10px;
   transition: all linear 0.25s;
+  text-align: center !important;
 }
 
 .profile-card-2 .profile-icons .fa {
-  margin: 5px;
+  /* margin: 5px; */
 }
 
 .profile-card-2:hover img {
@@ -6479,7 +6483,7 @@ section
 }
 
 .profile-card-2:hover .profile-username {
-  bottom: 60px;
+  /* bottom: 60px; */
 }
 
 .profile-card-2:hover .profile-icons {
