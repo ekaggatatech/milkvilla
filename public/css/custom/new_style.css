@@ -12061,13 +12061,21 @@ section
 }
 .new_why_milkvilla_circle:hover
 {
-    color: #ffffff;
-    background-color: #fdcc0d;
-    border: 1px solid #fdcc0d;
+    color: #ffffff !important;
+    background-color: #fdcc0d !important;
+    border: 1px solid #fdcc0d !important;
 }
-.new_why_milkvilla_circle:hover img 
+.new_why_milkvilla_circle:hover p a
 {
-    filter: invert(100%);
+    color: #ffffff !important;
+}
+.new_why_milkvilla_circle:active p a
+{
+    color: green !important;
+}
+.new_why_milkvilla_circle:hover img
+{
+    filter: invert(100%) !important;
 }
 @media only screen and (min-width: 992px)
 {
@@ -12341,9 +12349,9 @@ section
 }
 .meet_our_team_section_height_mgt
 {
-    height: 100vh;
+    /* height: 100vh; */
 }
-@media (max-width: 500px) 
+@media (max-width: 767.20px) /*502px*/
 {
     .footer_border
     {
@@ -12357,6 +12365,17 @@ section
     .meet_our_team_section_height_mgt
     {
         height: auto !important;
+    }
+    .box
+    {
+        height: 100% !important;
+        background: #fcdf12 center/cover !important;
+        -webkit-mask: unset !important;
+        mask: unset !important;
+        -webkit-mask-size: unset !important;;
+        -webkit-mask-repeat: unset !important;;
+        mask-size: unset !important;;
+        mask-repeat: unset !important;
     }
 }
 /* width */
@@ -12574,4 +12593,73 @@ button:focus {
 .owl-carousel 
 {
     z-index: unset !important;
+}
+/* New Know More CSS */
+.box 
+{
+    height: 520px;
+    background: #fcdf12 center/cover;
+    -webkit-mask:
+      radial-gradient(var(--r1,100%) var(--r2,50%) at top   ,white 79.5%,transparent 80%) top left,
+      radial-gradient(var(--r1,100%) var(--r2,50%) at bottom,transparent 79.5%,white 80%) top center,
+      radial-gradient(var(--r1,100%) var(--r2,50%) at top   ,white 79.5%,transparent 80%) top right;
+    mask:
+      radial-gradient(var(--r1,100%) var(--r2,50%) at top   ,white 79.5%,transparent 80%) top left,
+      radial-gradient(var(--r1,100%) var(--r2,50%) at bottom,transparent 79.5%,white 80%) top center,
+      radial-gradient(var(--r1,100%) var(--r2,50%) at top   ,white 79.5%,transparent 80%) top right;
+     /* adjust the 150% to control the covered area, the bigger the value the bigger the area will be*/
+    -webkit-mask-size:33.4% 150%;
+    -webkit-mask-repeat:no-repeat;
+    mask-size:33.4% 150%;
+    mask-repeat:no-repeat;
+    margin-bottom: 10px;
+}
+.featured 
+{ 
+    display: none; 
+}
+.show 
+{ 
+    display: block; 
+}
+.buttons 
+{ 
+    margin-bottom: 2em; 
+}
+#npbutton:hover 
+{ 
+    cursor: pointer; 
+}
+.previous
+{
+    background-color: #fcdf12; 
+    color: #000000; 
+    padding: 10px 10px 10px 10px;
+    border: 1px solid #fcdf12;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.previous:hover
+{
+    background-color: #000000; 
+    color: #ffffff;
+    border: 1px solid #000000;
+}
+.new_next
+{
+    background: #fcdf12; 
+    background-color: #fcdf12; 
+    color: #000000; 
+    padding: 10px 10px 10px 10px;
+    border: 1px solid #fcdf12;
+    border-radius: 8px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.new_next:hover
+{
+    background: #000000; 
+    background-color: #000000; 
+    color: #ffffff;
+    border: 1px solid #000000;
 }

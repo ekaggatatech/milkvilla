@@ -39,7 +39,6 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet" />
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHCeWiblpAq-wmmndKNzUDxP6iHrpohRA&libraries=places"></script> -->
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" style="overflow-x: hidden;">
 	<div id="overlayer"></div>
@@ -81,7 +80,7 @@
 				<div class="navbar-header">
 					<div class="row mt-0 mb-0 pt-0 pb-0 ml-0 mr-0 pl-0 pr-0">
 						<div class="col col-lg-12 col-sm-6 d-flex justify-content-start ml-0 mr-auto align-items-center">
-							<button class="" type="button" data-bs-toggle="collapse" data-bs-target="#menuItems" aria-controls="menuItems" aria-expanded="false" aria-label="Toggle Navigation" style="background: transparent;border: 0px solid transparent;">
+							<button type="button" data-bs-toggle="collapse" data-bs-target="#menuItems" aria-controls="menuItems" aria-expanded="false" aria-label="Toggle Navigation" style="background: transparent;border: 0px solid transparent;">
 								<img class="navbar-toggler" src="../public/images/open-menu.png" alt="Milkvilla Menu List" title="Click to open menu list" width="40" height="40" />
 							</button>
 						</div>
@@ -96,6 +95,7 @@
                         <li class="nav-item"><a class="nav-link" href="franchise.html">Franchise</a></li>
                         <li class="nav-item"><a class="nav-link" href="#whymilkvilla">Why Milkvilla ?</a></li>
                         <li class="nav-item"><a class="nav-link" href="#howitworks">How it works ?</a></li>
+						<li class="nav-item"><a class="nav-link" href="#knowmore">Know More</a></li>
        					<li class="nav-item"><a class="nav-link" href="#aboutmilkvilla">About MilkVilla</a></li>
                         <li class="nav-item"><a class="nav-link" href="#meetourteam">Meet Our Team</a></li>
                         <li class="nav-item"><a class="nav-link" href="#ataglance">At a glance</a></li>
@@ -114,7 +114,7 @@
 					</video>
 				</div>
 			</div>
-			<div class="row mt-0 mb-0 d-flex justify-content-center ml-auto mr-auto align-items-center">
+			<div class="row mt-0 mb-2 d-flex justify-content-center ml-auto mr-auto align-items-center">
 				<a href="https://play.google.com/store/apps/details?id=com.grobo.milkybay&hl=en" target="_blank" class="download_milvilla_button" title="Download Milkvilla"><img src="../public/images/playstore.png" alt="Download Milkvilla" title="Download Milkvilla" /></a>
 			</div>
 			<!-- <h4 class="text-black" style="text-align: center !important;position: absolute;top: 14%;left: 0;right: 0;">काम का दूध पीयें, नाम का नहीं</h4> -->
@@ -137,38 +137,38 @@
 								</div>
 							</div>
 							<div class="row mb-2 pb-0 text-center d-flex justify-content-center ml-auto mr-auto">
-											<div class="col-lg-3 col-xl-3 col-xxl-3 col-sm-10 col-md-10 col-xs-10 mb-2 new_why_milkvilla_circle">
-												<img src="./images/farmers-count.svg" class="card-img-top" style="padding-bottom: 0px;width: 80px;height: 80px;">
-												<p style="font-size: 26px; font-weight: bold;">1549 Farmers</p>
-												<p>Milk daily collected at each farmer's doorsteps</p>
-											</div>
-											<div class="col-lg-3 col-xl-3 col-xxl-3 col-sm-10 col-md-10 col-xs-10 mb-2 new_why_milkvilla_circle card_spacing">
-												<img src="./images/milk-test.svg" class="card-img-top" style="padding-bottom: 0px;width: 80px;height: 80px;">
-												<p style="font-size: 26px; font-weight: bold;">Micro Testing</p>
-												<p>Milk is tested at farmer's doorsteps to ensure best quality</p>
-											</div>
-											<div class="col-lg-3 col-xl-3 col-xxl-3 col-sm-10 col-md-10 col-xs-10 mb-2 new_why_milkvilla_circle card_spacing">
-												<img src="./images/milk-vending.svg" class="card-img-top" style="padding-bottom: 0px;width: 80px;height: 80px;">
-												<p style="font-size: 26px; font-weight: bold;">Wireless Milk Dispenser</p>
-												<p>Milk free from hand-touch during entire operation</p>
-											</div>
+								<div class="col-lg-3 col-xl-3 col-xxl-3 col-sm-10 col-md-10 col-xs-10 mb-2 new_why_milkvilla_circle">
+									<img src="./images/ban-svgrepo-com.svg" class="card-img-top" style="padding-bottom: 10px;padding-top: 10px;width: 60px;height: 60px;">
+									<p style="font-size: 18px; font-weight: bold;text-align: center;">No Processing</p>
+									<p><a href="#knowmore" onclick="return displayNoProcessingData();">Know More</a></p>
+								</div>
+								<div class="col-lg-3 col-xl-3 col-xxl-3 col-sm-10 col-md-10 col-xs-10 mb-2 new_why_milkvilla_circle card_spacing">
+									<img src="./images/no-plastic-sign-svgrepo-com.svg" class="card-img-top" style="padding-bottom: 10px;padding-top: 10px;width: 60px;height: 60px;">
+									<p style="font-size: 18px; font-weight: bold;text-align: center;">No Plastic</p>
+									<p><a href="#knowmore" onclick="return displayNoPlasticData();">Know More</a></p>
+								</div>
+								<div class="col-lg-3 col-xl-3 col-xxl-3 col-sm-10 col-md-10 col-xs-10 mb-2 new_why_milkvilla_circle card_spacing">
+									<img src="./images/cow-animals-svgrepo-com.svg" class="card-img-top" style="padding-bottom: 10px;padding-top: 10px;width: 60px;height: 60px;">
+									<p style="font-size: 18px; font-weight: bold;text-align: center;">Natural Pure Milk</p>
+									<p><a href="#knowmore" onclick="return displayNaturalPureMilkData();">Know More</a></p>
+								</div>
 							</div>
 							<div class="row mb-2 pb-0 text-center d-flex justify-content-center ml-auto mr-auto">
-											<div class="col-lg-3 col-xl-3 col-xxl-3 col-sm-10 col-md-10 col-xs-10 mb-2 new_why_milkvilla_circle">
-												<img src="./images/milk-chilling.svg" class="card-img-top" style="padding-bottom: 0px;width: 80px;height: 80px;">
-												<p style="font-size: 26px; font-weight: bold;">Only Chilled</p>
-												<p>No processing between farm and your home to ensure originality</p>
-											</div>
-											<div class="col-lg-3 col-xl-3 col-xxl-3 col-xxl-4 col-sm-10 col-md-10 col-xs-10 mb-2 new_why_milkvilla_circle card_spacing">
-												<img src="./images/no-plastic.svg" class="card-img-top" style="padding-bottom: 0px;width: 80px;height: 80px;">
-												<p style="font-size: 26px; font-weight: bold;">No Plastic</p>
-												<p>Say no to plastic packaging, take milk directly in your container</p>
-											</div>
-											<div class="col-lg-3 col-xl-3 col-xxl-3 col-sm-10 col-md-10 col-xs-10 mb-2 new_why_milkvilla_circle card_spacing">
-												<img src="./images/self-test2.svg" class="card-img-top" style="padding-bottom: 0px;width: 80px;height: 80px;">
-												<p style="font-size: 26px; font-weight: bold;">Self Test Kit</p>
-												<p>Free chemical test kit so you can self check the quality</p>
-											</div>
+								<div class="col-lg-3 col-xl-3 col-xxl-3 col-sm-10 col-md-10 col-xs-10 mb-2 new_why_milkvilla_circle">
+									<img src="./images/milk_auto_dispensation.png" class="card-img-top" style="padding-bottom: 0px;padding-top: 0px;width: 70px;height: 60px;">
+									<p style="font-size: 18px; font-weight: bold;text-align: center;">Touch Free Dispensation</p>
+									<p><a href="#knowmore" onclick="return displayTouchFreeDispensationData();">Know More</a></p>
+								</div>
+								<div class="col-lg-3 col-xl-3 col-xxl-3 col-xxl-4 col-sm-10 col-md-10 col-xs-10 mb-2 new_why_milkvilla_circle card_spacing">
+									<img src="./images/test-tube-5-svgrepo-com.svg" class="card-img-top" style="padding-bottom: 10px;padding-top: 10px;width: 60px;height: 60px;">
+									<p style="font-size: 18px; font-weight: bold;text-align: center;">Micro Testing</p>
+									<p><a href="#knowmore" onclick="return displayMicroTestingData();">Know More</a></p>
+								</div>
+								<div class="col-lg-3 col-xl-3 col-xxl-3 col-sm-10 col-md-10 col-xs-10 mb-2 new_why_milkvilla_circle card_spacing">
+									<img src="./images/SvgHeart.Com-215.png" class="card-img-top" style="padding-bottom: 10px;padding-top: 10px;width: 60px;height: 60px;">
+									<p style="font-size: 18px; font-weight: bold;text-align: center;">All in One Dairy Management</p>
+									<p><a href="#knowmore" onclick="return displayAllInOneDairyMgtData();">Know More</a></p>
+								</div>
 							</div>
 		</div>
 		</section>
@@ -233,7 +233,10 @@
 						<h2 class="section-title mb-0">How it Works ?</h2>
 					</div>
 				</div>
-				<div class="row mt-5 mb-2 d-flex justify-content-center ml-auto mr-auto">
+				<div class="row mt-0 mb-2 d-flex justify-content-center ml-auto mr-auto align-items-center">
+					<p style="text-align: center;">Here's a demo of consumer application available only for android.</p>
+				</div>
+				<div class="row mt-0 mb-2 d-flex justify-content-center ml-auto mr-auto">
 					<div class="col col-lg-2 col-sm-4 col-xs-4 col-md-4 col-xxl-2 col-xl-2">
 						<img src="./images/MilkvillaHomeScreen.png" alt="Milkvilla-Home" title="Milkvilla-Home" />
 					</div>
@@ -250,60 +253,129 @@
 						<img src="./images/MilkvillaAboutScreen.png" alt="Milkvilla-About-Us" title="Milkvilla-About-Us" />
 					</div>
 				</div>
-				<div class="row mt-0 mb-4 d-flex justify-content-center ml-auto mr-auto align-items-center">
-					<p style="text-align: center;">Here's a demo of consumer application available only for android.</p>
-				</div>
 				<div class="row mt-0 mb-0 d-flex justify-content-center ml-auto mr-auto align-items-center">
 					<p style="text-align: center;">Download now for a seamless doorstep milk delivery experience.</p>
 				</div>
-				<div class="row mt-0 mb-0 d-flex justify-content-center ml-auto mr-auto align-items-center">
+				<div class="row mt-0 mb-2 d-flex justify-content-center ml-auto mr-auto align-items-center">
 					<a href="https://play.google.com/store/apps/details?id=com.grobo.milkybay&hl=en" target="_blank" class="download_milvilla_button" title="Download Milkvilla"><img src="../public/images/playstore.png" alt="Download Milkvilla" title="Download Milkvilla" /></a>
 				</div>
 		</section>
 		<!-- Our Products Section -->
-		<section id="ourproducts" class="site-section bg-light new_sec" style="background-color: #F8F8F8 !important;height: auto;background: #F8F8F8 !important;opacity: 1;">
-		<div class="container">	
-			<div class="row mt-5 mb-5 pt-5">
-				<div class="col-12">
-					<h2 class="section-title text-center">Our Nutritious Value</h2>
+		<section id="knowmore" class="site-section bg-light new_sec meet_our_team_section_height_mgt" style="background-color: #F8F8F8 !important;background: #F8F8F8 !important;opacity: 1;">
+			<div class="container">	
+				<div class="row mt-0 mb-4 pt-5 d-flex justify-content-center ml-auto mr-auto">
+					<div class="col-12">
+						<h2 class="section-title text-center">Know More</h2>
+					</div>
+				</div>
+				<div id="noprocessing" data-id="1" class="box featured show" style="--r1:130%;--r2:71.5%">
+					<div class="row mb-2 mt-0 d-flex justify-content-center ml-auto mr-auto">
+						<img src="./images/ban-svgrepo-com.svg" alt="No Processing" title="No Processing" width="60" height="60" />
+					</div>
+					<div class="row mb-2 mt-0 d-flex justify-content-center ml-auto mr-auto">
+						<h3 style="text-align: center;color: #000000;">No Processing</h3>
+					</div>
+					<div class="row mb-2 mt-0 d-flex justify-content-center ml-auto mr-auto">
+						<p style="text-align: center;color: #000000;">
+							At Milkvilla, we take pride in delivering the purest form of milk to your doorstep.
+							Unlike most processed milk available in the market, our milk undergoes no processing. 
+							We follow a simple yet meticulous process of collection, chilling, and direct delivery. 
+							By skipping the pasteurization and powdering steps, we ensure that the milk you receive retains its natural nutrients and wholesome goodness, just as nature intended. 
+							Enjoy the unadulterated taste and nutritional benefits of farm-fresh milk, straight from our dairy to your home.
+						</p>				
+					</div>
+				</div>
+				<div id="noplastic" data-id="2" class="box featured" style="--r1:130%;--r2:71.5%">
+					<div class="row mb-2 mt-0 d-flex justify-content-center ml-auto mr-auto">
+						<img src="./images/no-plastic-sign-svgrepo-com.svg" alt="No Plastic" title="No Plastic" width="60" height="60" />
+					</div>
+					<div class="row mb-2 mt-0 d-flex justify-content-center ml-auto mr-auto">
+						<h3 style="text-align: center;color: #000000;">No Plastic</h3>
+					</div>
+					<div class="row mb-2 mt-0 d-flex justify-content-center ml-auto mr-auto">
+						<p style="text-align: center;color: #000000;">
+							Say goodbye to plastic packaging with Milkvilla's eco-conscious milk delivery service. 
+							Unlike conventional milk deliveries that contribute to plastic waste, our milk is delivered to you in its natural, unpackaged form. 
+							By prioritizing sustainability and environmental responsibility, we aim to reduce our carbon footprint and promote a cleaner, greener future. 
+							Join us in our commitment to a plastic-free environment while savoring the pure, untainted taste of milk, delivered fresh and waste-free, straight from our farm to your doorstep.
+						</p>				
+					</div>
+				</div>
+				<div id="naturalpuremilk" data-id="3" class="box featured" style="--r1:130%;--r2:71.5%">
+					<div class="row mb-2 mt-0 d-flex justify-content-center ml-auto mr-auto">
+						<img src="./images/cow-animals-svgrepo-com.svg" alt="Natural Pure Milk" title="Natural Pure Milk" width="60" height="60" />
+					</div>
+					<div class="row mb-2 mt-0 d-flex justify-content-center ml-auto mr-auto">
+						<h3 style="text-align: center;color: #000000;">Natural Pure Milk</h3>
+					</div>
+					<div class="row mb-2 mt-0 d-flex justify-content-center ml-auto mr-auto">
+						<p style="text-align: center;color: #000000;">
+							At Milkvilla, we are committed to supporting small-scale farmers with ethical dairy practices. 
+							We exclusively source milk from farmers with fewer than 5 cattle, ensuring that our milk comes from farms where cattle are naturally developed and nurtured. 
+							We refrain from partnering with large dairies where cattle may be subjected to prolonged confinement and fed chemically enhanced fodder to boost milk yield. 
+							Our focus on naturally raised cattle promotes grazing on organic feed and the traditional, humane practice of hand milking, preserving the integrity and authenticity of pure, unadulterated milk as nature intended. 
+							Enjoy the wholesome goodness of milk from happy, naturally nurtured cows with Milkvilla
+						</p>				
+					</div>
+				</div>
+				<div id="touchfreedispensation" data-id="4" class="box featured" style="--r1:130%;--r2:71.5%">
+					<div class="row mb-2 mt-0 d-flex justify-content-center ml-auto mr-auto">
+						<img src="./images/milk_auto_dispensation.png" alt="Touch Free Dispensation" title="Touch Free Dispensation" style="width: 80px;height: 80px;" />
+					</div>
+					<div class="row mb-2 mt-0 d-flex justify-content-center ml-auto mr-auto">
+						<h3 style="text-align: center;color: #000000;">Touch Free Dispensation</h3>
+					</div>
+					<div class="row mb-2 mt-0 d-flex justify-content-center ml-auto mr-auto">
+						<p style="text-align: center;color: #000000;">
+							Experience the ultimate in hygiene and convenience with Milkvilla's touch-free milk dispensation. 
+							From the moment our farmers collect the milk to its careful transportation in our specially designed chilled containers, every step is seamlessly touch-free. 
+							Our state-of-the-art delivery system ensures that your milk reaches your doorstep without any human contact. 
+							With our app-controlled dispensation, enjoy the ease and safety of pouring your milk directly into your utensil, hassle-free and completely touch-free. 
+							Embrace a new standard of cleanliness and efficiency with Milkvilla's unparalleled touch-free milk dispensation.
+						</p>				
+					</div>
+				</div>
+				<div id="microtesting" data-id="5" class="box featured" style="--r1:130%;--r2:71.5%">
+					<div class="row mb-2 mt-0 d-flex justify-content-center ml-auto mr-auto">
+						<img src="./images/test-tube-5-svgrepo-com.svg" alt="Micro Testing" title="Micro Testing" width="60" height="60" />
+					</div>
+					<div class="row mb-2 mt-0 d-flex justify-content-center ml-auto mr-auto">
+						<h3 style="text-align: center;color: #000000;">Micro Testing</h3>
+					</div>
+					<div class="row mb-2 mt-0 d-flex justify-content-center ml-auto mr-auto">
+						<p style="text-align: center;color: #000000;">
+							At Milkvilla, your safety and satisfaction are paramount. 
+							Our commitment to quality is upheld through our rigorous micro-testing process, encompassing over 107 detailed tests conducted before the milk is even added to our system. Rest assured, the comprehensive results, including the precise fat content and other essential components, are readily accessible to you. 
+							With transparency at the forefront, we empower our customers by providing the option for on-demand chemical testing, allowing you to verify the quality and purity of your milk right in your own home. 
+							Enjoy complete peace of mind with Milkvilla's thorough and customer-oriented micro-testing procedures.
+						</p>				
+					</div>
+				</div>
+				<div id="allinonedairymanagement" data-id="6" class="box featured" style="--r1:130%;--r2:71.5%">
+					<div class="row mb-2 mt-0 d-flex justify-content-center ml-auto mr-auto">
+						<img src="./images/SvgHeart.Com-215.png" alt="All in One Dairy Management" title="All in One Dairy Management" style="width: 100px;height: 80px;" />
+					</div>
+					<div class="row mb-2 mt-0 d-flex justify-content-center ml-auto mr-auto">
+						<h3 style="text-align: center;color: #000000;">All in One Dairy Management</h3>
+					</div>
+					<div class="row mb-2 mt-0 d-flex justify-content-center ml-auto mr-auto">
+						<p style="text-align: center;color: #000000;">
+							Simplify your dairy experience with the all-in-one Milkvilla app. 
+							Seamlessly manage every aspect of your milk delivery, from scheduling pick-up times and locations to easily tracing your milk cart's journey in real-time. 
+							Access comprehensive milk data, including nutritional information and balance details, all conveniently available at your fingertips. 
+							Earn loyalty points and enjoy the benefits of a valet service, effortlessly catering to all your dairy needs. 
+							With the holiday mode feature, pause your deliveries at your convenience, ensuring complete control and flexibility. 
+							Discover the ultimate convenience and customization with the Milkvilla app, your trusted companion for all your dairy requirements.
+						</p>				
+					</div>
+				</div>
+				<div class="buttons container mt-0 mb-0 text-center" id="prev_next_buttons" name="prev_next_buttons">
+					<div id="new_next_previous_buttons_div" name="new_next_previous_buttons_div">
+						<button class="previous" type="button" disabled id="npbutton" name="npbutton">Previous</button>
+						<button class="new_next" type="button" id="npbutton" name="npbutton">Next</button>
+					</div>
 				</div>
 			</div>
-			<div class="row mb-5 mt-5 d-flex justify-content-center ml-auto mr-auto">
-				<div class="col-lg-4 col-xxl-4 col-xl-4 col-sm-10 col-md-4 col-xs-10 mb-2 mt-5">
-					<div class="row mb-5 d-flex justify-content-center ml-auto mr-auto">
-						<h4 style="color: #fcdf12;font-weight: bold;text-align: left;">Our products are based on <p style="color: #000000;font-size: 30px;">high quality milk</p></h4>
-					</div>
-					<div class="row mb-5 d-flex justify-content-center ml-auto mr-auto">
-						<h4 style="color: #fcdf12;font-weight: bold;text-align: left;">We provide<p style="color: #000000;font-size: 30px;">Organic Fresh Milk</p></h4>
-					</div>
-					<div class="row d-flex justify-content-center ml-auto mr-auto">
-						<h4 style="color: #fcdf12;font-weight: bold;text-align: left;">We are <p style="color: #000000;font-size: 30px;">Environmental Friendly</p></h4>
-					</div>
-				</div>
-				<div class="col-lg-4 col-xxl-4 col-xl-4 col-sm-10 col-md-4 col-xs-10 mb-2 mt-5" style="background-image: url('../public/images/our_product_image_one.png');background-position: center;background-repeat: no-repeat;background-size: contain;width: auto;height: auto;"></div>
-				<div class="col-lg-4 col-xxl-4 col-xl-4 col-sm-10 col-md-4 col-xs-10 mb-2 mt-0">
-					<div class="row mb-5 d-flex justify-content-center ml-auto mr-auto mt-5">
-						<div>
-							<img src="../public/images/grass.png" alt="100% Organic Products" title="100% Organic Products" style="float: left;margin-right: 20px;" />
-							<h4 style="color: #fcdf12;font-weight: bold;text-align: left;"><p style="color: #000000;font-size: 30px;text-align: left;">100% Organic Products</p></h4>
-						</div>
-					</div>
-					<div class="row mb-5 d-flex justify-content-center ml-auto mr-auto mt-5">
-						<div>
-							<img src="../public/images/feeder.png" alt="Recommended for babies" title="Recommended for babies" style="float: left;margin-right: 20px;" />
-							<h4 style="color: #fcdf12;font-weight: bold;text-align: left;"><p style="color: #000000;font-size: 30px;text-align: left;">Recommended for babies</p></h4>
-						</div>
-					</div>
-					<div class="row d-flex justify-content-center ml-auto mr-auto mt-5">
-						<div>
-							<img src="../public/images/cow.png" alt="High Quality Raw Milk" title="High Quality Raw Milk" style="float: left;margin-right: 20px;" />
-							<h4 style="color: #fcdf12;font-weight: bold;text-align: left;"><p style="color: #000000;font-size: 30px;text-align: left;font-weight: bold;">High Quality Raw Milk</p></h4>
-						</div>
-					</div>
-				</div>
-			</div>
-			<br /><br />
-		</div>
 		</section>
 		<!-- About Us Section -->
 		<section id="aboutmilkvilla" class="site-section bg-light new_sec" style="background-color: #ffffff;height: auto;">
@@ -377,7 +449,7 @@
 						<h2 class="section-title">Meet Our Team</h2>
 					</div>
 				</div>
-				<div class="row d-flex justify-content-center ml-auto mr-auto text-center mt-5 mb-5">
+				<div class="row d-flex justify-content-center ml-auto mr-auto text-center mt-5 mb-5 pt-4">
 						<div class="col-lg-2 col-md-12 mt-5">
 							<div class="row mb-4" style="display: flex;justify-content: center;margin-left: auto;margin-right: auto;">
 								<div class="profile-card-2">
@@ -569,15 +641,6 @@
 												<div class="row">
 													<p>If you have any questions or problems simply use the following contact details.</p>
 												</div>
-												<!-- <div class="row">
-													<div>
-														<span class="icon-location-arrow" style="float: left;color: #fcdf12;width: auto;height: auto;"></span>
-														<h5 style="text-align: left;color: #fcdf12;margin-left: 20px;">Our Location</h5>
-													</div>
-												</div>
-												<div class="row">
-													<p><a href="#">Veenu nagar, Shahbajpur, Muzaffarpur, Bihar - 843117</a></p>
-												</div> -->
 												<div class="row">
 													<div>
 														<span class="icon-mail_outline" style="float: left;color: #fcdf12;width: auto;height: auto;"></span>
@@ -695,10 +758,80 @@
 	</div>
 	</main>
 	<!-- .site-wrap -->
-	<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-	<div class="elfsight-app-c84d6d3a-8bab-4a53-ae50-8f89bdb3111d"></div>
+
+	<script>
+		document.getElementById('noprocessing').style.display='block';
+		document.getElementById('noplastic').style.display='none';
+		document.getElementById('naturalpuremilk').style.display='none';
+		document.getElementById('touchfreedispensation').style.display='none';
+		document.getElementById('microtesting').style.display='none';
+		document.getElementById('allinonedairymanagement').style.display='none';
+		document.getElementById('new_next_previous_buttons_div').style.display='block';
+		function displayNoProcessingData()
+		{
+			document.getElementById('noprocessing').style.display='block';
+			document.getElementById('noplastic').style.display='none';
+			document.getElementById('naturalpuremilk').style.display='none';
+			document.getElementById('touchfreedispensation').style.display='none';
+			document.getElementById('microtesting').style.display='none';
+			document.getElementById('allinonedairymanagement').style.display='none';
+			document.getElementById('new_next_previous_buttons_div').style.display='none';
+		}
+		function displayNoPlasticData()
+		{
+			document.getElementById('noprocessing').style.display='none';
+			document.getElementById('noplastic').style.display='block';
+			document.getElementById('naturalpuremilk').style.display='none';
+			document.getElementById('touchfreedispensation').style.display='none';
+			document.getElementById('microtesting').style.display='none';
+			document.getElementById('allinonedairymanagement').style.display='none';
+			document.getElementById('new_next_previous_buttons_div').style.display='none';
+		}
+		function displayNaturalPureMilkData()
+		{
+			document.getElementById('noprocessing').style.display='none';
+			document.getElementById('noplastic').style.display='none';
+			document.getElementById('naturalpuremilk').style.display='block';
+			document.getElementById('touchfreedispensation').style.display='none';
+			document.getElementById('microtesting').style.display='none';
+			document.getElementById('allinonedairymanagement').style.display='none';
+			document.getElementById('new_next_previous_buttons_div').style.display='none';
+		}
+		function displayTouchFreeDispensationData()
+		{
+			document.getElementById('noprocessing').style.display='none';
+			document.getElementById('noplastic').style.display='none';
+			document.getElementById('naturalpuremilk').style.display='none';
+			document.getElementById('touchfreedispensation').style.display='block';
+			document.getElementById('microtesting').style.display='none';
+			document.getElementById('allinonedairymanagement').style.display='none';
+			document.getElementById('new_next_previous_buttons_div').style.display='none';
+		}
+		function displayMicroTestingData()
+		{
+			document.getElementById('noprocessing').style.display='none';
+			document.getElementById('noplastic').style.display='none';
+			document.getElementById('naturalpuremilk').style.display='none';
+			document.getElementById('touchfreedispensation').style.display='none';
+			document.getElementById('microtesting').style.display='block';
+			document.getElementById('allinonedairymanagement').style.display='none';
+			document.getElementById('new_next_previous_buttons_div').style.display='none';
+		}
+		function displayAllInOneDairyMgtData()
+		{
+			document.getElementById('noprocessing').style.display='none';
+			document.getElementById('noplastic').style.display='none';
+			document.getElementById('naturalpuremilk').style.display='none';
+			document.getElementById('touchfreedispensation').style.display='none';
+			document.getElementById('microtesting').style.display='none';
+			document.getElementById('allinonedairymanagement').style.display='block';
+			document.getElementById('new_next_previous_buttons_div').style.display='none';
+		}
+	</script>
+
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<script src="https://smtpjs.com/v3/smtp.js"></script>
+
 	<script>
 		function emailSend()
 		{
@@ -740,19 +873,7 @@
 			}
 			);
 		}
-		/* const scriptURL = 'https://script.google.com/macros/s/AKfycby4-5_zYwMh0WNxBTh6PtWbOYGMSQQAgy2_j7IjmSxFwX5pch7gvNaq9plVENCjJgoTYA/exec';
-		const form = document.forms['contact-form'];
-		form.addEventListener('submit', e => 
-		{
-			e.preventDefault()
-			fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-			.then(response => alert("Thank you! your form is submitted successfully." ))
-			.then(() => { window.location.reload(); })
-			.catch(error => console.error('Error!', error.message))
-		}); */
-	</script>
-	<script>
-			// Counter Increment Number 
+
 			const targetNumber = 1800000;
 			const milkDeliveredNumberDisplay = document.getElementById('milkDelivered');
 			let currentNumber = 0;
@@ -808,44 +929,8 @@
 				}
 			};
 			incrementNumberThree();
-
-		const items = document.querySelectorAll('.accordion button');
-		function toggleAccordion() 
-		{
-			const itemToggle = this.getAttribute('aria-expanded');
-			for (i = 0; i < items.length; i++) 
-			{
-				items[i].setAttribute('aria-expanded', 'false');
-			}
-			if (itemToggle == 'false') 
-			{
-				this.setAttribute('aria-expanded', 'true');
-			}
-		}
-		items.forEach((item) => item.addEventListener('click', toggleAccordion));
-
-		fetch('https://api.milkvilla.in/api/farmers/openact/farmercount').then(response => response.text()).then(data => document.getElementById("farmer-count").innerHTML = `${data} Farmers`);
-
-		var chatbox = document.getElementById('fb-customer-chat');
-		chatbox.setAttribute("page_id", "2407484409538326");
-		chatbox.setAttribute("attribution", "biz_inbox");
-
-		window.fbAsyncInit = function () 
-		{
-			FB.init({
-				xfbml: true,
-				version: 'v13.0'
-			});
-		};
-		(function (d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) return;
-			js = d.createElement(s);
-			js.id = id;
-			js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
 	</script>
+
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/jquery-ui.js"></script>
 	<script src="js/popper.min.js"></script>
@@ -858,10 +943,7 @@
 	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/jquery.sticky.js"></script>
 	<script src="js/main.js"></script>
-	<!-- Messenger Chat Plugin Code -->
-	<div id="fb-root"></div>
-	<!-- Your Chat Plugin code -->
-	<div id="fb-customer-chat" class="fb-customerchat"></div>
+
 	<script>
 		$(document).ready(function() 
 		{
@@ -927,11 +1009,80 @@
 			});
 		});
 	</script>
+
 	<script>
 		$('.navbar-nav>li>a').on('click', function()
 		{
 			$('.navbar-collapse').collapse('hide');
 		});
 	</script>
+
+	<script>
+		$(document).on('click', '#npbutton', handleClick());
+		function handleClick() 
+		{
+			let id = 1;
+			const items = $('.featured').length;
+			function toggleFeatured(id) 
+			{
+				$(`.featured[data-id=${id}]`).toggle('show');
+			}
+			function updateButtons(id) 
+			{
+				$('button').prop('disabled', false);
+				if (id === 1) 
+				{
+					$('.previous').prop('disabled', true);
+				}
+				if (id === items) 
+				{
+					$('.new_next').prop('disabled', true);
+				}
+			}
+			return function() 
+			{
+				const cl = $(this).attr('class');
+				toggleFeatured(id);
+				if (cl === 'previous' && id > 1) --id;
+				if (cl === 'new_next' && id < items) ++id;
+				toggleFeatured(id);
+				updateButtons(id);
+			}
+		}
+	</script>
+
+	<script>
+		fetch('https://api.milkvilla.in/api/farmers/openact/farmercount').then(response => response.text()).then(data => document.getElementById("farmer-count").innerHTML = `${data} Farmers`);
+	</script>
+
+	<!-- Messenger Chat Plugin Code -->
+	<div id="fb-root"></div>
+	<!-- Your Chat Plugin code -->
+	<div id="fb-customer-chat" class="fb-customerchat"></div>
+	<script>
+		var chatbox = document.getElementById('fb-customer-chat');
+		chatbox.setAttribute("page_id", "2407484409538326");
+		chatbox.setAttribute("attribution", "biz_inbox");
+	</script>
+	<!-- Your SDK code -->
+	<script>
+		window.fbAsyncInit = function () 
+		{
+			FB.init({
+				xfbml: true,
+				version: 'v13.0'
+			});
+		};
+		(function (d, s, id) 
+		{
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s);
+			js.id = id;
+			js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
 </body>
 </html>

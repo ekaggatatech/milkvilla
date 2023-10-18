@@ -13,7 +13,8 @@
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-GBNP3G8RXL"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
-		function gtag() {
+		function gtag() 
+        {
 			dataLayer.push(arguments);
 		}
 		gtag('js', new Date());
@@ -843,12 +844,6 @@
 										<li><a href="mailto:contact@milkvilla.in">contact@milkvilla.in</a></li>
 									</ul>
 								</div>					
-								<!-- <div class="col-sm-4 col-md-4 mb-2 footer_border">
-									<h3>Address</h3>
-									<ul>
-										<li><a href="#">Veenu nagar, Shahbajpur, Muzaffarpur,<br />Bihar - 843117</a></li>
-									</ul>
-								</div> -->
 								<div class="col-sm-4 col-md-4 mb-5 mt-0">
 									<h3>Phone</h3>
 									<ul><li><a href="tel:+91-9006890881">+91-9006890881</a></li></ul>
@@ -868,6 +863,7 @@
             </div>
 	</div>
 	</main>
+
     <script>
         function openBlog(evt, blogName) 
         {
@@ -887,11 +883,42 @@
         }
         document.getElementById("defaultOpen").click();
     </script>
+    
     <script>
         $('.navbar-nav>li>a').on('click', function()
         {
             $('.navbar-collapse').collapse('hide');
         });
     </script>
+
+	<!-- Messenger Chat Plugin Code -->
+	<div id="fb-root"></div>
+	<!-- Your Chat Plugin code -->
+	<div id="fb-customer-chat" class="fb-customerchat"></div>
+	<script>
+		var chatbox = document.getElementById('fb-customer-chat');
+		chatbox.setAttribute("page_id", "2407484409538326");
+		chatbox.setAttribute("attribution", "biz_inbox");
+	</script>
+	<!-- Your SDK code -->
+	<script>
+		window.fbAsyncInit = function () 
+		{
+			FB.init({
+				xfbml: true,
+				version: 'v13.0'
+			});
+		};
+		(function (d, s, id) 
+		{
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s);
+			js.id = id;
+			js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
 </body>
 </html>
