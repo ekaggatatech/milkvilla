@@ -1,19 +1,33 @@
+@font-face 
+{
+  font-family: 'Rubik-Regular';
+  src: url('../fonts/Rubik/Rubik-Regular.ttf') format('truetype');
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nunito',sans-serif;
+    font-family: 'Rubik-Regular';
     z-index: 1999;
 }
-
-
-
-
+html 
+{
+  scroll-behavior: smooth !important;
+  height: 100%;
+  overflow: hidden;
+}
+body 
+{
+  font-family: 'Rubik-Regular';
+	font-size: 15px;
+	font-weight: normal;
+	color: #777;
+	font-style: normal;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
 /* nav bar  */
-
-
-
-
 .site-navbar {
     margin-bottom: 0px;
     z-index: 1999;
@@ -217,7 +231,7 @@
     width: 90%;
     display: block;
     margin: auto;
-    padding-top: 100px;
+    /* padding-top: 100px; */
     z-index: -2;
 }
 
