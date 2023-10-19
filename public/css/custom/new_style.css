@@ -12597,7 +12597,7 @@ button:focus {
 /* New Know More CSS */
 .box 
 {
-    height: 520px;
+    height: 700px;
     background: #fcdf12 center/cover;
     -webkit-mask:
       radial-gradient(var(--r1,100%) var(--r2,50%) at top   ,white 79.5%,transparent 80%) top left,
@@ -12612,7 +12612,6 @@ button:focus {
     -webkit-mask-repeat:no-repeat;
     mask-size:33.4% 150%;
     mask-repeat:no-repeat;
-    margin-bottom: 10px;
 }
 .featured 
 { 
@@ -12624,7 +12623,7 @@ button:focus {
 }
 .buttons 
 { 
-    margin-bottom: 2em; 
+    margin-bottom: 1em; 
 }
 #npbutton:hover 
 { 

@@ -140,34 +140,34 @@
 								<div class="col-lg-3 col-xl-3 col-xxl-3 col-sm-10 col-md-10 col-xs-10 mb-2 new_why_milkvilla_circle">
 									<img src="./images/ban-svgrepo-com.svg" class="card-img-top" style="padding-bottom: 10px;padding-top: 10px;width: 60px;height: 60px;">
 									<p style="font-size: 18px; font-weight: bold;text-align: center;">No Processing</p>
-									<p><a href="#knowmore" onclick="return displayNoProcessingData();">Know More</a></p>
+									<p><a href="#knowmore" onclick="return displayNoProcessingData();" title="Click here to know No Processing">Know More</a></p>
 								</div>
 								<div class="col-lg-3 col-xl-3 col-xxl-3 col-sm-10 col-md-10 col-xs-10 mb-2 new_why_milkvilla_circle card_spacing">
 									<img src="./images/no-plastic-sign-svgrepo-com.svg" class="card-img-top" style="padding-bottom: 10px;padding-top: 10px;width: 60px;height: 60px;">
 									<p style="font-size: 18px; font-weight: bold;text-align: center;">No Plastic</p>
-									<p><a href="#knowmore" onclick="return displayNoPlasticData();">Know More</a></p>
+									<p><a href="#knowmore" onclick="return displayNoPlasticData();" title="Click here to know No Plastic">Know More</a></p>
 								</div>
 								<div class="col-lg-3 col-xl-3 col-xxl-3 col-sm-10 col-md-10 col-xs-10 mb-2 new_why_milkvilla_circle card_spacing">
 									<img src="./images/cow-animals-svgrepo-com.svg" class="card-img-top" style="padding-bottom: 10px;padding-top: 10px;width: 60px;height: 60px;">
 									<p style="font-size: 18px; font-weight: bold;text-align: center;">Natural Pure Milk</p>
-									<p><a href="#knowmore" onclick="return displayNaturalPureMilkData();">Know More</a></p>
+									<p><a href="#knowmore" onclick="return displayNaturalPureMilkData();" title="Click here to know Natural Pure Milk">Know More</a></p>
 								</div>
 							</div>
 							<div class="row mb-2 pb-0 text-center d-flex justify-content-center ml-auto mr-auto">
 								<div class="col-lg-3 col-xl-3 col-xxl-3 col-sm-10 col-md-10 col-xs-10 mb-2 new_why_milkvilla_circle">
 									<img src="./images/milk_auto_dispensation.png" class="card-img-top" style="padding-bottom: 0px;padding-top: 0px;width: 70px;height: 60px;">
 									<p style="font-size: 18px; font-weight: bold;text-align: center;">Touch Free Dispensation</p>
-									<p><a href="#knowmore" onclick="return displayTouchFreeDispensationData();">Know More</a></p>
+									<p><a href="#knowmore" onclick="return displayTouchFreeDispensationData();" title="Click here to know Touch Free Dispensation">Know More</a></p>
 								</div>
 								<div class="col-lg-3 col-xl-3 col-xxl-3 col-xxl-4 col-sm-10 col-md-10 col-xs-10 mb-2 new_why_milkvilla_circle card_spacing">
 									<img src="./images/test-tube-5-svgrepo-com.svg" class="card-img-top" style="padding-bottom: 10px;padding-top: 10px;width: 60px;height: 60px;">
 									<p style="font-size: 18px; font-weight: bold;text-align: center;">Micro Testing</p>
-									<p><a href="#knowmore" onclick="return displayMicroTestingData();">Know More</a></p>
+									<p><a href="#knowmore" onclick="return displayMicroTestingData();" title="Click here to know Micro Testing">Know More</a></p>
 								</div>
 								<div class="col-lg-3 col-xl-3 col-xxl-3 col-sm-10 col-md-10 col-xs-10 mb-2 new_why_milkvilla_circle card_spacing">
 									<img src="./images/SvgHeart.Com-215.png" class="card-img-top" style="padding-bottom: 10px;padding-top: 10px;width: 60px;height: 60px;">
 									<p style="font-size: 18px; font-weight: bold;text-align: center;">All in One Dairy Management</p>
-									<p><a href="#knowmore" onclick="return displayAllInOneDairyMgtData();">Know More</a></p>
+									<p><a href="#knowmore" onclick="return displayAllInOneDairyMgtData();" title="Click here to know All in One Dairy Management">Know More</a></p>
 								</div>
 							</div>
 		</div>
@@ -261,21 +261,27 @@
 				</div>
 		</section>
 		<!-- Our Products Section -->
-		<section id="knowmore" class="site-section bg-light new_sec meet_our_team_section_height_mgt" style="background-color: #F8F8F8 !important;background: #F8F8F8 !important;opacity: 1;">
+		<section id="knowmore" class="site-section bg-light new_sec" style="background-color: #F8F8F8 !important;background: #F8F8F8 !important;opacity: 1;">
 			<div class="container">	
-				<div class="row mt-0 mb-4 pt-5 d-flex justify-content-center ml-auto mr-auto">
+				<div class="row mt-0 mb-0 pt-4 d-flex justify-content-center ml-auto mr-auto">
 					<div class="col-12">
 						<h2 class="section-title text-center">Know More</h2>
 					</div>
 				</div>
+				<div class="buttons container mt-0 mb-0 text-center" id="prev_next_buttons" name="prev_next_buttons">
+					<div id="new_next_previous_buttons_div" name="new_next_previous_buttons_div">
+						<button class="previous" type="button" disabled id="npbutton" name="npbutton">Previous</button>
+						<button class="new_next" type="button" id="npbutton" name="npbutton">Next</button>
+					</div>
+				</div>
 				<div id="noprocessing" data-id="1" class="box featured show" style="--r1:130%;--r2:71.5%">
-					<div class="row mb-2 mt-0 d-flex justify-content-center ml-auto mr-auto">
+					<div class="row mb-5 mt-0 d-flex justify-content-center ml-auto mr-auto">
 						<img src="./images/ban-svgrepo-com.svg" alt="No Processing" title="No Processing" width="60" height="60" />
 					</div>
-					<div class="row mb-2 mt-0 d-flex justify-content-center ml-auto mr-auto">
+					<div class="row mb-5 mt-0 d-flex justify-content-center ml-auto mr-auto">
 						<h3 style="text-align: center;color: #000000;">No Processing</h3>
 					</div>
-					<div class="row mb-2 mt-0 d-flex justify-content-center ml-auto mr-auto">
+					<div class="row mb-0 mt-0 d-flex justify-content-center ml-auto mr-auto">
 						<p style="text-align: center;color: #000000;">
 							At Milkvilla, we take pride in delivering the purest form of milk to your doorstep.
 							Unlike most processed milk available in the market, our milk undergoes no processing. 
@@ -286,13 +292,13 @@
 					</div>
 				</div>
 				<div id="noplastic" data-id="2" class="box featured" style="--r1:130%;--r2:71.5%">
-					<div class="row mb-2 mt-0 d-flex justify-content-center ml-auto mr-auto">
+					<div class="row mb-5 mt-0 d-flex justify-content-center ml-auto mr-auto">
 						<img src="./images/no-plastic-sign-svgrepo-com.svg" alt="No Plastic" title="No Plastic" width="60" height="60" />
 					</div>
-					<div class="row mb-2 mt-0 d-flex justify-content-center ml-auto mr-auto">
+					<div class="row mb-5 mt-0 d-flex justify-content-center ml-auto mr-auto">
 						<h3 style="text-align: center;color: #000000;">No Plastic</h3>
 					</div>
-					<div class="row mb-2 mt-0 d-flex justify-content-center ml-auto mr-auto">
+					<div class="row mb-0 mt-0 d-flex justify-content-center ml-auto mr-auto">
 						<p style="text-align: center;color: #000000;">
 							Say goodbye to plastic packaging with Milkvilla's eco-conscious milk delivery service. 
 							Unlike conventional milk deliveries that contribute to plastic waste, our milk is delivered to you in its natural, unpackaged form. 
@@ -302,13 +308,13 @@
 					</div>
 				</div>
 				<div id="naturalpuremilk" data-id="3" class="box featured" style="--r1:130%;--r2:71.5%">
-					<div class="row mb-2 mt-0 d-flex justify-content-center ml-auto mr-auto">
+					<div class="row mb-5 mt-0 d-flex justify-content-center ml-auto mr-auto">
 						<img src="./images/cow-animals-svgrepo-com.svg" alt="Natural Pure Milk" title="Natural Pure Milk" width="60" height="60" />
 					</div>
-					<div class="row mb-2 mt-0 d-flex justify-content-center ml-auto mr-auto">
+					<div class="row mb-5 mt-0 d-flex justify-content-center ml-auto mr-auto">
 						<h3 style="text-align: center;color: #000000;">Natural Pure Milk</h3>
 					</div>
-					<div class="row mb-2 mt-0 d-flex justify-content-center ml-auto mr-auto">
+					<div class="row mb-0 mt-0 d-flex justify-content-center ml-auto mr-auto">
 						<p style="text-align: center;color: #000000;">
 							At Milkvilla, we are committed to supporting small-scale farmers with ethical dairy practices. 
 							We exclusively source milk from farmers with fewer than 5 cattle, ensuring that our milk comes from farms where cattle are naturally developed and nurtured. 
@@ -319,13 +325,13 @@
 					</div>
 				</div>
 				<div id="touchfreedispensation" data-id="4" class="box featured" style="--r1:130%;--r2:71.5%">
-					<div class="row mb-2 mt-0 d-flex justify-content-center ml-auto mr-auto">
+					<div class="row mb-5 mt-0 d-flex justify-content-center ml-auto mr-auto">
 						<img src="./images/milk_auto_dispensation.png" alt="Touch Free Dispensation" title="Touch Free Dispensation" style="width: 80px;height: 80px;" />
 					</div>
-					<div class="row mb-2 mt-0 d-flex justify-content-center ml-auto mr-auto">
+					<div class="row mb-5 mt-0 d-flex justify-content-center ml-auto mr-auto">
 						<h3 style="text-align: center;color: #000000;">Touch Free Dispensation</h3>
 					</div>
-					<div class="row mb-2 mt-0 d-flex justify-content-center ml-auto mr-auto">
+					<div class="row mb-0 mt-0 d-flex justify-content-center ml-auto mr-auto">
 						<p style="text-align: center;color: #000000;">
 							Experience the ultimate in hygiene and convenience with Milkvilla's touch-free milk dispensation. 
 							From the moment our farmers collect the milk to its careful transportation in our specially designed chilled containers, every step is seamlessly touch-free. 
@@ -336,13 +342,13 @@
 					</div>
 				</div>
 				<div id="microtesting" data-id="5" class="box featured" style="--r1:130%;--r2:71.5%">
-					<div class="row mb-2 mt-0 d-flex justify-content-center ml-auto mr-auto">
+					<div class="row mb-5 mt-0 d-flex justify-content-center ml-auto mr-auto">
 						<img src="./images/test-tube-5-svgrepo-com.svg" alt="Micro Testing" title="Micro Testing" width="60" height="60" />
 					</div>
-					<div class="row mb-2 mt-0 d-flex justify-content-center ml-auto mr-auto">
+					<div class="row mb-5 mt-0 d-flex justify-content-center ml-auto mr-auto">
 						<h3 style="text-align: center;color: #000000;">Micro Testing</h3>
 					</div>
-					<div class="row mb-2 mt-0 d-flex justify-content-center ml-auto mr-auto">
+					<div class="row mb-0 mt-0 d-flex justify-content-center ml-auto mr-auto">
 						<p style="text-align: center;color: #000000;">
 							At Milkvilla, your safety and satisfaction are paramount. 
 							Our commitment to quality is upheld through our rigorous micro-testing process, encompassing over 107 detailed tests conducted before the milk is even added to our system. Rest assured, the comprehensive results, including the precise fat content and other essential components, are readily accessible to you. 
@@ -352,13 +358,13 @@
 					</div>
 				</div>
 				<div id="allinonedairymanagement" data-id="6" class="box featured" style="--r1:130%;--r2:71.5%">
-					<div class="row mb-2 mt-0 d-flex justify-content-center ml-auto mr-auto">
+					<div class="row mb-5 mt-0 d-flex justify-content-center ml-auto mr-auto">
 						<img src="./images/SvgHeart.Com-215.png" alt="All in One Dairy Management" title="All in One Dairy Management" style="width: 100px;height: 80px;" />
 					</div>
-					<div class="row mb-2 mt-0 d-flex justify-content-center ml-auto mr-auto">
+					<div class="row mb-5 mt-0 d-flex justify-content-center ml-auto mr-auto">
 						<h3 style="text-align: center;color: #000000;">All in One Dairy Management</h3>
 					</div>
-					<div class="row mb-2 mt-0 d-flex justify-content-center ml-auto mr-auto">
+					<div class="row mb-0 mt-0 d-flex justify-content-center ml-auto mr-auto">
 						<p style="text-align: center;color: #000000;">
 							Simplify your dairy experience with the all-in-one Milkvilla app. 
 							Seamlessly manage every aspect of your milk delivery, from scheduling pick-up times and locations to easily tracing your milk cart's journey in real-time. 
@@ -367,12 +373,6 @@
 							With the holiday mode feature, pause your deliveries at your convenience, ensuring complete control and flexibility. 
 							Discover the ultimate convenience and customization with the Milkvilla app, your trusted companion for all your dairy requirements.
 						</p>				
-					</div>
-				</div>
-				<div class="buttons container mt-0 mb-0 text-center" id="prev_next_buttons" name="prev_next_buttons">
-					<div id="new_next_previous_buttons_div" name="new_next_previous_buttons_div">
-						<button class="previous" type="button" disabled id="npbutton" name="npbutton">Previous</button>
-						<button class="new_next" type="button" id="npbutton" name="npbutton">Next</button>
 					</div>
 				</div>
 			</div>
