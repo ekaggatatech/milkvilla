@@ -48,7 +48,6 @@
 	</div>
 	<main class="new_wrapper">
 	<div class="site-wrap">
-		<!-- Web Header Section (HOME) -->
 			<header class="header-area header main-header">            	
 				<div id="header-sticky" class="menu-area">
 				  <div class="header_container">
@@ -74,7 +73,6 @@
 				  </div>
 			  </div>
 		  </header>
-		  <!-- Mobile Header Section (HOME) -->
 		  <header id="top_nav" class="top_nav navbar navbar-default">
 				<div class="navbar-header">
 					<div class="row mt-0 mb-0 pt-0 pb-0 ml-0 mr-0 pl-0 pr-0">
@@ -104,8 +102,7 @@
     				</ul>
         		</div>
 		  </header>
-		<!-- Cover Video Section (HOME) -->
-		<section id="home" class="site-blocks-cover new_sec" style="background-color: transparent;">
+		<section id="home" class="site-blocks-cover new_sec" style="background-color: transparent !important;">
 			<div class="row mt-0 mb-0" style="border: 0px solid transparent !important;">
 				<div class="video-wrapper" style="border: 0px solid transparent !important;">
 					<video autoplay muted loop id="myVideo" style="border: 0px solid transparent !important;">
@@ -118,7 +115,6 @@
 			</div>
 			<!-- <h4 class="text-black" style="text-align: center !important;position: absolute;top: 14%;left: 0;right: 0;">काम का दूध पीयें, नाम का नहीं</h4> -->
 		</section>
-		<!-- Why Choose Us Section -->
 		<section id="whymilkvilla" class="site-section new_sec" style="min-height: 100vh;background-color: #fcdf12;width: 100vw;height: auto;background-image: url('../public/images/milkvilla_why_us_bg.png');background-attachment: fixed;background-position: center;background-size: cover;background-repeat: no-repeat;max-width:100%;opacity: 1;">
 		<div class="container">
 							<div class="row mt-5 pt-5 mb-2 justify-content-center text-center">
@@ -171,7 +167,6 @@
 							</div>
 		</div>
 		</section>
-		<!-- Counter Increment Section -->
 		<section id="counter_data" class="site-section new_sec" style="min-height: 100vh;background-color: #ffffff;height: auto;background-image: url('../public/images/1.png');background-attachment: fixed;background-position: center;background-size: cover;background-repeat: no-repeat;">
 		<div class="container">
 						<div class="row mt-5 mb-5 pt-5">
@@ -225,7 +220,6 @@
 						</div>
 		</div>
 		</section>
-		<!-- How it Works App Section -->
 		<section id="howitworks" class="site-section bg-light new_sec meet_our_team_section_height_mgt" style="background-color: #ffffff;">
 				<div class="row mt-5 mb-5">
 					<div class="col-12 text-center">
@@ -259,7 +253,6 @@
 					<a href="https://play.google.com/store/apps/details?id=com.grobo.milkybay&hl=en" target="_blank" class="download_milvilla_button" title="Download Milkvilla"><img src="../public/images/playstore.png" alt="Download Milkvilla" title="Download Milkvilla" /></a>
 				</div>
 		</section>
-		<!-- Our Products Section -->
 		<section id="knowmore" class="site-section bg-light new_sec" style="background-color: #F8F8F8 !important;background: #F8F8F8 !important;opacity: 1;">
 			<div class="container">	
 				<div class="row mt-0 mb-0 pt-4 d-flex justify-content-center ml-auto mr-auto">
@@ -376,7 +369,6 @@
 				</div>
 			</div>
 		</section>
-		<!-- About Us Section -->
 		<section id="aboutmilkvilla" class="site-section bg-light new_sec" style="background-color: #ffffff;height: auto;">
 		<div class="container">	
 				<div class="row mt-5 mb-5">
@@ -440,7 +432,6 @@
 				</div>
 		</div>
 		</section>
-		<!-- Team Section -->
 		<section id="meetourteam" class="site-section bg-light new_sec meet_our_team_section_height_mgt">
 		<div class="container">
 				<div class="row mt-5 mb-5 justify-content-center text-center">
@@ -564,7 +555,6 @@
 				</div>
 		</div>
 		</section>
-		<!-- Embeded Youtube Video -->
 		<section id="ataglance" class="site-section bg-light new_sec" style="background-color: #ffffff;">
 		<div class="container">
 				<div class="row mt-5 mb-4 d-flex justify-content-center ml-auto mr-auto">
@@ -581,7 +571,6 @@
 				</div>
 		</div>	
 		</section>
-		<!-- Customer Google Review Section -->
 		<section id="customerreview" class="site-section bg-light new_sec">
 		<div class="container">
 			<div class="row mt-5 mb-5 d-flex justify-content-center ml-auto mr-auto">
@@ -621,7 +610,6 @@
 			</div>
 		</div>
 		</section>
-		<!-- Contact Us Section -->
 		<section id="contactmilkvilla" class="site-section bg-light new_sec" style="background-color: #ffffff;height: 100%;">
 		<div class="container">
 									<div class="row mt-5 mb-2">
@@ -768,8 +756,6 @@
 		</section>
 	</div>
 	</main>
-	<!-- .site-wrap -->
-
 	<script>
 		document.getElementById('noprocessing').style.display='block';
 		document.getElementById('noplastic').style.display='none';
@@ -839,10 +825,8 @@
 			document.getElementById('new_next_previous_buttons_div').style.display='none';
 		}
 	</script>
-
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<script src="https://smtpjs.com/v3/smtp.js"></script>
-
 	<script>
 		function emailSend()
 		{
@@ -884,64 +868,59 @@
 			}
 			);
 		}
-
-			const targetNumber = 1800000;
-			const milkDeliveredNumberDisplay = document.getElementById('milkDelivered');
-			let currentNumber = 0;
-			const incrementNumber = () => 
-				{
-					if (currentNumber <= targetNumber) 
-					{
-						milkDeliveredNumberDisplay.textContent = currentNumber;
-						currentNumber++;
-						setTimeout(incrementNumber, 0);
-					}
-				};
-			incrementNumber();
-
-			const targetNumberOne = 6;
-			const happyCustomersNumberDisplay = document.getElementById('happyCustomers');
-			let currentNumberOne = 0;
-			const incrementNumberOne = () => 
+		const targetNumber = 1800000;
+		const milkDeliveredNumberDisplay = document.getElementById('milkDelivered');
+		let currentNumber = 0;
+		const incrementNumber = () => 
+		{
+			if(currentNumber <= targetNumber) 
 			{
-				if (currentNumberOne <= targetNumberOne) 
-				{
-					happyCustomersNumberDisplay.textContent = currentNumberOne;
-					currentNumberOne++;
-					setTimeout(incrementNumberOne, 800);
-				}
-			};
-			incrementNumberOne();
-
-			const targetNumberTwo = 50;
-			const productsNumberDisplay = document.getElementById('products');
-			let currentNumberTwo = 0;
-			const incrementNumberTwo = () => 
+				milkDeliveredNumberDisplay.textContent = currentNumber;
+				currentNumber++;
+				setTimeout(incrementNumber, 0);
+			}
+		};
+		incrementNumber();
+		const targetNumberOne = 6;
+		const happyCustomersNumberDisplay = document.getElementById('happyCustomers');
+		let currentNumberOne = 0;
+		const incrementNumberOne = () => 
+		{
+			if(currentNumberOne <= targetNumberOne) 
 			{
-				if (currentNumberTwo <= targetNumberTwo) 
-				{
-					productsNumberDisplay.textContent = currentNumberTwo;
-					currentNumberTwo++;
-					setTimeout(incrementNumberTwo, 100);
-				}
-			};
-			incrementNumberTwo();
-
-			const targetNumberThree = 1500;
-			const fiveStarsNumberDisplay = document.getElementById('fiveStars');
-			let currentNumberThree = 0;
-			const incrementNumberThree = () => 
+				happyCustomersNumberDisplay.textContent = currentNumberOne;
+				currentNumberOne++;
+				setTimeout(incrementNumberOne, 800);
+			}
+		};
+		incrementNumberOne();	
+		const targetNumberTwo = 50;
+		const productsNumberDisplay = document.getElementById('products');
+		let currentNumberTwo = 0;
+		const incrementNumberTwo = () => 
+		{
+			if(currentNumberTwo <= targetNumberTwo) 
 			{
-				if (currentNumberThree <= targetNumberThree) 
-				{
-					fiveStarsNumberDisplay.textContent = currentNumberThree;
-					currentNumberThree++;
-					setTimeout(incrementNumberThree, 0);
-				}
-			};
-			incrementNumberThree();
+				productsNumberDisplay.textContent = currentNumberTwo;
+				currentNumberTwo++;
+				setTimeout(incrementNumberTwo, 100);
+			}
+		};
+		incrementNumberTwo();
+		const targetNumberThree = 1500;
+		const fiveStarsNumberDisplay = document.getElementById('fiveStars');
+		let currentNumberThree = 0;
+		const incrementNumberThree = () => 
+		{
+			if(currentNumberThree <= targetNumberThree) 
+			{
+				fiveStarsNumberDisplay.textContent = currentNumberThree;
+				currentNumberThree++;
+				setTimeout(incrementNumberThree, 0);
+			}
+		};
+		incrementNumberThree();
 	</script>
-
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/jquery-ui.js"></script>
 	<script src="js/popper.min.js"></script>
@@ -954,7 +933,6 @@
 	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/jquery.sticky.js"></script>
 	<script src="js/main.js"></script>
-
 	<script>
 		$(document).ready(function() 
 		{
@@ -1020,14 +998,12 @@
 			});
 		});
 	</script>
-
 	<script>
 		$('.navbar-nav>li>a').on('click', function()
 		{
 			$('.navbar-collapse').collapse('hide');
 		});
 	</script>
-
 	<script>
 		$(document).on('click', '#npbutton', handleClick());
 		function handleClick() 
@@ -1061,21 +1037,16 @@
 			}
 		}
 	</script>
-
 	<script>
 		fetch('https://api.milkvilla.in/api/farmers/openact/farmercount').then(response => response.text()).then(data => document.getElementById("farmer-count").innerHTML = `${data} Farmers`);
 	</script>
-
-	<!-- Messenger Chat Plugin Code -->
 	<div id="fb-root"></div>
-	<!-- Your Chat Plugin code -->
 	<div id="fb-customer-chat" class="fb-customerchat"></div>
 	<script>
 		var chatbox = document.getElementById('fb-customer-chat');
 		chatbox.setAttribute("page_id", "2407484409538326");
 		chatbox.setAttribute("attribution", "biz_inbox");
 	</script>
-	<!-- Your SDK code -->
 	<script>
 		window.fbAsyncInit = function () 
 		{
@@ -1094,6 +1065,5 @@
 			fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));
 	</script>
-
 </body>
 </html>

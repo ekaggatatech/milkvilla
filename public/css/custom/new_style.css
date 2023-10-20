@@ -12377,6 +12377,16 @@ section
         mask-size: unset !important;;
         mask-repeat: unset !important;
     }
+    .video-wrapper video 
+    {
+        height: 80vh !important;
+        object-fit: fill !important;
+    }
+    #myVideo 
+    {
+        height: 80vh !important;
+        object-fit: fill !important;
+    }
 }
 /* width */
 ::-webkit-scrollbar 
@@ -12413,10 +12423,6 @@ section
     border-radius: 60%;
     padding: 20px 20px 20px 20px;
     text-align: center !important;
-    /* position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0; */
 }
 /* Home Page Cover Video CSS */
 .video-wrapper 
@@ -12433,13 +12439,6 @@ section
 }
 #myVideo 
 {
-    /* height: 90vh;
-    width: 100vw;
-    padding-top: 100px;
-    object-fit: cover; */
-    /* width: 100%; */
-    /* object-fit: fill; */
-    /* background-size: cover; */
     object-fit: cover;
     height: 90vh;
     opacity: 1;
@@ -12455,15 +12454,19 @@ section
     {
         scroll-snap-align: unset !important;
     }
-    #myVideo 
-    {
-        /* object-fit: fill !important; */
-        /* object-fit: cover !important; */
-        height: 80vh !important;
-    }
     .franchise_bg_img
     {
         background-size: contain !important;
+    }
+    .video-wrapper video 
+    {
+        height: 80vh !important;
+        /* object-fit: fill !important; */
+    }
+    #myVideo 
+    {
+        height: 80vh !important;
+        /* object-fit: fill !important; */
     }
 }
 /* Blogs Page Tab View CSS */
