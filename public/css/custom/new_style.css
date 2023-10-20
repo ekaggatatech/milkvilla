@@ -12086,7 +12086,7 @@ section
 }
 .module
 {
-    width: auto;
+    width: 100%;
     height: auto;
     background-image: url('../../images/milk_corner_img.jpeg');
     background-attachment: fixed;
@@ -12095,7 +12095,7 @@ section
     background-repeat: no-repeat;
     max-width:100%;
     opacity: 1;   
-    border: 4px solid #fdcc0d !important;
+    padding: 10px 10px 10px 10px;
 }
 .module:hover 
 {
