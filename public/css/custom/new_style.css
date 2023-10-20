@@ -12379,13 +12379,19 @@ section
     }
     .video-wrapper video 
     {
-        height: 80vh !important;
-        object-fit: fill !important;
+        /* height: 80vh !important;
+        object-fit: fill !important; */
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: unset !important;
     }
     #myVideo 
     {
-        height: 80vh !important;
-        object-fit: fill !important;
+        /* height: 80vh !important;
+        object-fit: fill !important; */
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: unset !important;
     }
 }
 /* width */
@@ -12457,16 +12463,6 @@ section
     .franchise_bg_img
     {
         background-size: contain !important;
-    }
-    .video-wrapper video 
-    {
-        height: 80vh !important;
-        /* object-fit: fill !important; */
-    }
-    #myVideo 
-    {
-        height: 80vh !important;
-        /* object-fit: fill !important; */
     }
 }
 /* Blogs Page Tab View CSS */
