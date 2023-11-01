@@ -12661,3 +12661,79 @@ button:focus {
     color: #ffffff;
     border: 1px solid #000000;
 }
+.btn-new-primary
+{
+    color: #ffffff;
+    background-color: #000000;
+    text-align: center;
+    width: auto;
+    height: auto;
+    border: 1px solid #000000;
+}
+.btn-new-primary:hover, .btn-new-primary:focus,  .btn-new-primary:active
+{
+    color: #000000;
+    background-color: #fdcc0d;
+    border: 1px solid #fdcc0d;
+}
+.circle 
+{ 
+    width: 300px;
+    height: 240px;
+    border: 2px solid #fcdf12; 
+    border-radius: 60%; 
+    background-color: #fcdf12;
+    background: #fcdf12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 20px 20px 20px 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    text-align: center;
+}
+.circle:hover
+{ 
+    background-color: #ffffff;
+    border: 2px solid #000000; 
+}
+.arrow-column
+{
+    display: inline-flex;
+    align-items: center;
+    height: 30vh;
+}
+.arrow 
+{
+    width: 0;
+    height: 0;
+    border-left: 40px solid #000000;
+    border-bottom: 40px solid transparent;
+    border-top: 40px solid transparent;
+    margin: 0 auto;
+}
+@media screen and (max-width: 1198px) 
+{
+    .arrow-column
+    {
+        display: none;
+    }
+    .circle-respo-view-margins 
+    { 
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 991.20px) 
+{
+    .arrow-column
+    {
+        display: none;
+    }
+    .circle-respo-view-margins 
+    { 
+        margin-left: 0px;
+    }
+}
